@@ -3,13 +3,110 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Online Store Example</title>
+        <title>Online Store</title>
         <meta name="keywords" content="Online, clothing, clothes, shopping, e-commerce, sale">
         <meta name="description" content="Website for online shopping">
         <meta name="author" content="Alain Picard">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        
+        <header>
+            <div class="container flex-container">
+                <div id="branding">
+                    <h1>Phone Case Co</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>APPLE</li>
+                        <li>SAMSUNG</li>
+                        <li>LG</li>
+                        <li>CART</li>
+                    </ul>                    
+                </nav>
+            </div>
+        </header>
+        <section id="showcase">
+            <div class="container">
+                <div id="showcase-text">
+                    <h1>iPhone 12 Cases<br>GALAXY S20 Cases</h1>
+                    <h1>GET YOURS TODAY!</h1>
+                </div>
+            </div>            
+        </section>
+        <section id="case-display">
+            <div class="container flex-container-grid">
+                <div class="box">
+                    <img src="./assets/img-five.png">
+                    <p>Sample Text</p>
+                    <p id="price">PRICE</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/img-one.png">
+                    <p>Sample Text</p>
+                    <p id="price">PRICE</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/img-two.png">
+                    <p>Sample Text</p>
+                    <p id="price">PRICE</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/img-three.png">
+                    <p>Sample Text</p>
+                    <p id="price">PRICE</p>
+                </div>
+            </div>
+        </section>
+        <section id="mid-page">
+            <div class="container">
+                <h3>Welcome To Our Page! We're Glad You Came!</h3>
+                <p>Our company sells the newest and most popular<br>
+                phone cases around and we do it at the lowest prices around!<br>
+                We Guarantee You Won't Be Go Anywhere Else Once You Shop With Us!</p>
+            </div>
+        </section>
+        <section id="bottom-showcase">
+            <div class="container">
+                
+            </div>
+        </section>
+        <footer>
+            <div class="container flex-container">
+                <div id="newsletter">
+                    <input type="text" id="fname" placeholder="First Name"><input type="text" id="lname" placeholder="Last Name">
+                    <input type="email" id="email" placeholder="email">
+                    <button type="submit" id="newsletter-button">Subscribe</button>
+                </div>
+                <div class="models">
+                    <ul>
+                        <li>iPhone 12 Pro Max</li>
+                        <li>iPhone 12 Pro</li>
+                        <li>iPhone 12</li>
+                        <li>iPhone 12 Mini</li>
+                        <li>iPhone 11 Pro Max</li>
+                        <li>iPhone 11 Pro</li>
+                    </ul>
+                </div>
+                <div class="models">
+                    <ul>                        
+                        <li>iPhone 11</li>
+                        <li>iPhone SE</li>
+                        <li>iPhone XS Max</li>
+                        <li>iPhone XS</li>
+                        <li>iPhone XR</li>
+                        <li>iPhone X</li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <p>twitter</p>
+                    <p>facebook</p>
+                    <p>pinterest</p>
+                    <p>instagram</p>
+                </div>
+            </div>
+            <p id="copyright">&copy; Copyright 2020 All Rights Reserved</p>
+            <p>Web Design By Alain Picard</p>
+        </footer>
+        <script type="text/javascript" src="app.js"></script>
     </body>
 </html>

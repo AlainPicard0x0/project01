@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: #fff;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.flex-container-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+header{
+    height: 14vh;
+}
+#branding{
+    margin: 30px;
+}
+header li{
+    display: inline;
+    margin: 15px;
+}
+#showcase{
+    height: 70vh;
+    background: url("./assets/iphone-6.jpg") no-repeat 0 -150px;
+    background-size: cover;
+    background-color: #f4f4f4;
+}
+#showcase-text{
+    font-size: 2rem;
+    float: left;
+    margin-top: 50px;
+}
+#case-display{
+    margin: 80px;
+    height: 40vh;
+}
+#case-display img{
+    width: 20vw;
+    height: 30vh;
+}
+#mid-page{
+    background-color: #f4f4f4;
+    height: 20vh;
+}
+#bottom-showcase{
+    background: url("./assets/iphone.jpeg") no-repeat 0 -140px;
+    background-size: cover;
+    height: 40vh;
+}
