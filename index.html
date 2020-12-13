@@ -8,21 +8,46 @@
         <meta name="description" content="Website for online shopping">
         <meta name="author" content="Alain Picard">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
             <div class="container flex-container">
                 <div id="branding">
-                    <h1>Phone Case Co</h1>
+                    <h1>The Phone Case Company</h1>
                 </div>
-                <nav>
-                    <ul>
-                        <li>APPLE</li>
-                        <li>SAMSUNG</li>
-                        <li>LG</li>
-                        <li>CART</li>
-                    </ul>                    
-                </nav>
+                <div class="navbar flex-container">
+                    <div id="apple" class="dropdown">
+                        <button class="dropdown-button">iPhone 12<i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="my-dropdown">
+                            <a href="#">iPhone 12 Pro Max</a>
+                            <a href="#">iPhone 12 Pro</a>
+                            <a href="#">iPhone 12</a>
+                            <a href="#">iPhone 12 Mini</a>
+                        </div>
+                    </div>
+                    <div id="apple" class="dropdown">
+                        <button class="dropdown-button">iPhone 11<i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="my-dropdown">
+                            <a href="#">iPhone 11 Pro Max</a>
+                            <a href="#">iPhone 11 Pro</a>
+                            <a href="#">iPhone 11</a>
+                            <a href="#">iPhone SE</a>
+                        </div>
+                    </div>
+                    <div id="apple" class="dropdown">
+                        <button class="dropdown-button">iPhone X<i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="my-dropdown">
+                            <a href="#">iPhone XS Max</a>
+                            <a href="#">iPhone XS</a>
+                            <a href="#">iPhone XR</a>
+                            <a href="#">iPhone X</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <section id="showcase">
@@ -38,22 +63,22 @@
                 <div class="box">
                     <img src="./assets/img-five.png">
                     <p>Sample Text</p>
-                    <p id="price">PRICE</p>
+                    <p id="price">$19.99</p>
                 </div>
                 <div class="box">
                     <img src="./assets/img-one.png">
                     <p>Sample Text</p>
-                    <p id="price">PRICE</p>
+                    <p id="price">$24.99</p>
                 </div>
                 <div class="box">
                     <img src="./assets/img-two.png">
                     <p>Sample Text</p>
-                    <p id="price">PRICE</p>
+                    <p id="price">$23.99</p>
                 </div>
                 <div class="box">
                     <img src="./assets/img-three.png">
                     <p>Sample Text</p>
-                    <p id="price">PRICE</p>
+                    <p id="price">$29.99</p>
                 </div>
             </div>
         </section>

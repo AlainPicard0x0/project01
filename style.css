@@ -35,7 +35,7 @@ body{
 }
 header{
     height: 14vh;
-    background-color: #111;
+    background-color: #fff;
     border-bottom: solid 1px #fff;
 }
 #branding{
@@ -44,10 +44,34 @@ header{
 #branding h1{
     color: rgb(231, 63, 2);
 }
-header li{
-    display: inline;
-    margin: 15px;
-    color: #fff;
+.dropdown{
+    background-color: none;
+    /* display: inline-block; */
+}
+.dropdown-button{
+    border: none;
+    outline: none;
+    font-size: 1.0rem;
+    color: rgb(231,63,2);
+    padding: 14px;
+    background-color: #fff;
+}
+.dropdown-content{
+    display: none;
+    min-width: 160px;
+    background-color: none;
+}
+.show{
+    display: block;
+}
+.dropdown-content a{
+    float: none;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    padding: 3px;
+    font-size: 1.0rem;
 }
 #showcase{
     height: 70vh;
