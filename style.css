@@ -46,6 +46,7 @@ header{
 }
 .dropdown{
     background-color: none;
+    width: 12vw;
     /* display: inline-block; */
 }
 .dropdown-button{
@@ -59,7 +60,7 @@ header{
 .dropdown-content{
     display: none;
     min-width: 160px;
-    background-color: none;
+    background-color: rgb(255,255,255, 0.7);
 }
 .show{
     display: block;
@@ -67,7 +68,7 @@ header{
 .dropdown-content a{
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     color: #000;
     padding: 3px;
