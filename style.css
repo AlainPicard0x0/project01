@@ -153,3 +153,15 @@ footer p{
     text-align: left;
     padding: 6px;
 }
+/*selection.html page*/
+.flex-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#selection-container img{
+    width: 20vw;
+    height: 30vh;
+}
