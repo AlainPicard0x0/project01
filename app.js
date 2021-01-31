@@ -6,14 +6,27 @@ else {
 }
 
 function runApp() {
+    closeDropMenu();
     let dropDown = document.getElementsByClassName("dropdown-button");
     for(let i = 0; i < dropDown.length; i++) {
         let dropdownDisplay = dropDown[i];        
-        dropdownDisplay.addEventListener("click", (e) => {
+        dropdownDisplay.addEventListener("click", (e) => {  
+            let clicked = e.target;  
+            console.log(clicked); 
             let dropdownContainer = dropdownDisplay.parentElement;
             let drop = dropdownContainer.getElementsByClassName("dropdown-content")[0];
             drop.classList.toggle("show");
-            console.log(drop);
         });
     }
+}
+
+//Check if any drop-down menus are currently open and close them before opening another
+function closeDropMenu() { 
+        console.log("closeDropMenu fired off")
+        let navContainer = document.getElementsByClassName("navbar")[0];
+        let dropContainer = navContainer.getElementsByClassName("dropdown-content");
+        for(let i = 0; i < dropContainer.length; i++) {
+            let hasShow = dropContainer[i]
+            hasShow.classList.remove("show");
+        }            
 }
