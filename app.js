@@ -6,13 +6,15 @@ else {
 }
 
 function runApp() {
-    closeDropMenu();
     let dropDown = document.getElementsByClassName("dropdown-button");
     for(let i = 0; i < dropDown.length; i++) {
         let dropdownDisplay = dropDown[i];        
         dropdownDisplay.addEventListener("click", (e) => {  
-            let clicked = e.target;  
-            console.log(clicked); 
+            let clicked = e.target;
+            let clickedClass = clicked.nextSibling.nextSibling;
+            if(!clickedClass.classList.contains("show")) {
+                closeDropMenu();
+            } 
             let dropdownContainer = dropdownDisplay.parentElement;
             let drop = dropdownContainer.getElementsByClassName("dropdown-content")[0];
             drop.classList.toggle("show");
