@@ -11,7 +11,13 @@ function runApp() {
         let dropdownDisplay = dropDown[i];        
         dropdownDisplay.addEventListener("click", (e) => {  
             let clicked = e.target;
-            let clickedClass = clicked.nextSibling.nextSibling;
+            let clickedClass;
+            if(clicked.classList.contains("fa")) {
+                clickedClass = clicked.parentElement.nextElementSibling;
+            }
+            else {
+                clickedClass = clicked.nextElementSibling;
+            }            
             if(!clickedClass.classList.contains("show")) {
                 closeDropMenu();
             } 
