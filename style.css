@@ -47,7 +47,6 @@ header{
 .dropdown{
     background-color: none;
     width: 12vw;
-    /* display: inline-block; */
 }
 .dropdown-button{
     border: none;
