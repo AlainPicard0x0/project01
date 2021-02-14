@@ -176,10 +176,22 @@ footer p{
     border: none;
 }
 .cart-icon{
-    margin: 0 5px;    
+    margin: 0 5px; 
+    display: inline-block;   
 }
 .cart-num{
-    
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    background-color:rgb(182, 51, 3);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+}
+.cart-num p{
+    text-align: center;
+    margin-top: .3rem;
 }
 .shopping-cart{
     float: right;
