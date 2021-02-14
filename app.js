@@ -4,6 +4,9 @@ if(document.readyState == "loading") {
 else {
     runApp();
 }
+//Shows the number of items in the cart
+const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
+let numberOfItems = 0;
 
 function runApp() {
     let dropDown = document.getElementsByClassName("dropdown-button");
@@ -26,6 +29,14 @@ function runApp() {
             drop.classList.toggle("show");
         });
     }
+    
+    let addButton = document.getElementsByClassName("add-to-cart");
+    for(let i = 0; i < addButton.length; i++) {
+        let currentAddButton = addButton[i];
+        currentAddButton.addEventListener("click", () => {
+            addToCart();
+        })
+    }
 }
 
 //Check if any drop-down menus are currently open and close them before opening another
@@ -37,4 +48,9 @@ function closeDropMenu() {
             let hasShow = dropContainer[i]
             hasShow.classList.remove("show");
         }            
+}
+
+function addToCart() {    
+        numberOfItems++;
+        itemsInCart.innerText = numberOfItems;
 }

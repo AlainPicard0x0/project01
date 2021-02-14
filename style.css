@@ -176,7 +176,7 @@ footer p{
     border: none;
 }
 .cart-icon{
-    margin: 0 5px; 
+    margin: 0 5px 0 0; 
     display: inline-block;   
 }
 .cart-num{
