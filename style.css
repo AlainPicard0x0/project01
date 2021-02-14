@@ -43,6 +43,7 @@ header{
 }
 #branding h1{
     color: rgb(231, 63, 2);
+    display: inline;
 }
 .dropdown{
     background-color: none;
@@ -173,4 +174,8 @@ footer p{
     background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
     color: #fff;
     border: none;
+}
+.cart-icon{
+    float: right;
+    display: inline;
 }
