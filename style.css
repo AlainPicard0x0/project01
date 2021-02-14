@@ -176,6 +176,11 @@ footer p{
     border: none;
 }
 .cart-icon{
+    margin: 0 5px;    
+}
+.cart-num{
+    
+}
+.shopping-cart{
     float: right;
-    display: inline;
 }
