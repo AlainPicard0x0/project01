@@ -193,6 +193,13 @@ footer p{
     text-align: center;
     margin-top: .3rem;
 }
+.go-to-cart{
+    display: inline-block;
+}
+.go-to-cart:hover{
+    color:rgb(182, 51, 3);
+    cursor: pointer;
+}
 .shopping-cart{
     float: right;
 }
