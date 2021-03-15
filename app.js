@@ -54,3 +54,7 @@ function addToCart() {
         numberOfItems++;
         itemsInCart.innerText = numberOfItems;
 }
+
+function goToCart() {
+    location.href = "./cart.html";
+}
