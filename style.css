@@ -203,3 +203,8 @@ footer p{
 .shopping-cart{
     float: right;
 }
+/*Cart Section*/
+#cart-section {
+    height: 60vh;
+}
+
