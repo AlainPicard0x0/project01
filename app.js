@@ -7,6 +7,8 @@ else {
 //Shows the number of items in the cart
 const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
 let numberOfItems = 0;
+//Array to store items added to cart
+let cartList = [];
 
 function runApp() {
     let dropDown = document.getElementsByClassName("dropdown-button");
@@ -34,7 +36,7 @@ function runApp() {
     for(let i = 0; i < addButton.length; i++) {
         let currentAddButton = addButton[i];
         currentAddButton.addEventListener("click", () => {
-            addToCart();
+            addToCart(currentAddButton);
         })
     }
 }
@@ -50,11 +52,25 @@ function closeDropMenu() {
         }            
 }
 
-function addToCart() {    
+function addToCart(currentAddButton) { 
+        //get parent of cart item that was clicked and save title and price to array   
+        let itemContainer = currentAddButton.parentElement;
+        let price = itemContainer.getElementsByClassName("price")[0].innerText;
+        let title = itemContainer.getElementsByClassName("title")[0].innerText;
+        cartList.push({
+            "title": title,
+            "price": price
+        });
+        console.log(cartList);
         numberOfItems++;
         itemsInCart.innerText = numberOfItems;
 }
 
 function goToCart() {
     location.href = "./cart.html";
+}
+
+//Need to display items in cart
+function displayCart() {
+    //Get items that have been added to cart
 }
