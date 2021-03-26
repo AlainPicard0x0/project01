@@ -64,7 +64,7 @@ function addToCart(currentAddButton) {
             "icon": icon 
         });
         console.log(cartList);
-        numberOfItems++;
+        numberOfItems = cartList.length;
         itemsInCart.innerText = numberOfItems;
 }
 
