@@ -57,9 +57,11 @@ function addToCart(currentAddButton) {
         let itemContainer = currentAddButton.parentElement;
         let price = itemContainer.getElementsByClassName("price")[0].innerText;
         let title = itemContainer.getElementsByClassName("title")[0].innerText;
+        let icon = itemContainer.getElementsByClassName("img-src")[0].src;
         cartList.push({
             "title": title,
-            "price": price
+            "price": price,
+            "icon": icon 
         });
         console.log(cartList);
         numberOfItems++;
@@ -71,6 +73,7 @@ function goToCart() {
 }
 
 //Need to display items in cart
-function displayCart() {
+function displayCart(arr) {
     //Get items that have been added to cart
+
 }
