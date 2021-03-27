@@ -10,6 +10,8 @@ let numberOfItems = 0;
 //Array to store items added to cart
 let cartList = [];
 
+
+
 function runApp() {
     let dropDown = document.getElementsByClassName("dropdown-button");
     for(let i = 0; i < dropDown.length; i++) {
@@ -70,10 +72,22 @@ function addToCart(currentAddButton) {
 
 function goToCart() {
     location.href = "./cart.html";
+    const cartSection = document.getElementById("cart-section");
+    console.log(cartSection);
+    displayCart(cartList);
 }
 
 //Need to display items in cart
 function displayCart(arr) {
     //Get items that have been added to cart
-
+    for(let i = 0; i < arr.length; i++) {
+        console.log(cartList[i]["title"]);
+        let newItem = document.createElement("div");
+        newItem.classList.add("box");
+        let itemContents = `<img width="250px" height="250px" class="img-src" src="${arr[i]["icon"]}">
+                            <p class="title">${arr[i]["title"]}</p>
+                            <p id="price" class="price">${arr[i]["price"]}</p>`;
+        newItem.innerHTML = itemContents;
+        selectionBranding.appendChild(newItem);
+    }
 }
