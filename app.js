@@ -56,7 +56,7 @@ function runApp() {
         addToCartBtn.addEventListener("click", () => {
             console.log("Hello World");
             //location.href = "./cart.html"; 
-            location.replace("./cart.html");
+            //location.replace("./cart.html");
             const cartSection = document.getElementById("cart-section");
             displayCart(cartSection, cartList);
         })
