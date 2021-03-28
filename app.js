@@ -51,6 +51,15 @@ function runApp() {
             addToCart(currentAddButton);
         })
     }
+
+    let addToCartBtn = document.getElementById("cart-button");
+        addToCartBtn.addEventListener("click", () => {
+            console.log("Hello World");
+            //location.href = "./cart.html"; 
+            location.replace("./cart.html");
+            const cartSection = document.getElementById("cart-section");
+            displayCart(cartSection, cartList);
+        })
 }
 
 //Check if any drop-down menus are currently open and close them before opening another
@@ -79,17 +88,6 @@ function addToCart(currentAddButton) {
         console.log(cartList);
         numberOfItems = cartList.length;
         itemsInCart.innerText = numberOfItems;
-        let addToCartBtn = document.getElementById("cart-button");
-        addToCartBtn.addEventListener("click", () => {
-            console.log("Hello World");
-        })
-}
-
-function goToCart() {
-    location.href = "./cart.html";
-    runApp();
-    const cartSection = document.getElementById("cart-section");
-    displayCart(cartSection, cartList);
 }
 
 //Need to display items in cart
