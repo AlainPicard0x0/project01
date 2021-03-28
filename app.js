@@ -8,7 +8,17 @@ else {
 const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
 let numberOfItems = 0;
 //Array to store items added to cart
-let cartList = [];
+let cartList;
+//Set up localStorage variable
+let data = JSON.parse(localStorage.getItem("savedCart"));
+if(data) {
+    cartList = data;
+    console.log(`Cart saved to local storage: ${ cartList }`);
+}
+else {
+    cartList = [];
+    console.log("local storage is empty");
+}
 
 
 
@@ -65,20 +75,25 @@ function addToCart(currentAddButton) {
             "price": price,
             "icon": icon 
         });
+        localStorage.setItem("savedCart", JSON.stringify(cartList));
         console.log(cartList);
         numberOfItems = cartList.length;
         itemsInCart.innerText = numberOfItems;
+        let addToCartBtn = document.getElementById("cart-button");
+        addToCartBtn.addEventListener("click", () => {
+            console.log("Hello World");
+        })
 }
 
 function goToCart() {
     location.href = "./cart.html";
+    runApp();
     const cartSection = document.getElementById("cart-section");
-    console.log(cartSection);
-    displayCart(cartList);
+    displayCart(cartSection, cartList);
 }
 
 //Need to display items in cart
-function displayCart(arr) {
+function displayCart(cartSection, arr) {
     //Get items that have been added to cart
     for(let i = 0; i < arr.length; i++) {
         console.log(cartList[i]["title"]);
@@ -88,6 +103,6 @@ function displayCart(arr) {
                             <p class="title">${arr[i]["title"]}</p>
                             <p id="price" class="price">${arr[i]["price"]}</p>`;
         newItem.innerHTML = itemContents;
-        selectionBranding.appendChild(newItem);
+        cartSection.appendChild(newItem);
     }
 }
