@@ -207,4 +207,12 @@ footer p{
 #cart-section {
     height: 60vh;
 }
+.cart-container {
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
