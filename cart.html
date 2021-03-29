@@ -14,14 +14,14 @@
         <header>
             <div class="container flex-container">
                 <div id="branding">
-                    <h1>The Phone Case Company</h1>
+                    
                 </div>
                 
             </div>
         </header>
         <section> 
             <div id="cart-section" class="cart-container">
-                <h1>My Cart Div</h1>
+                <!--Display Cart Contents Here-->
             </div>            
         </section>
         
@@ -79,5 +79,9 @@
             </div>
         </footer>
         <script type="text/javascript" src="app.js"></script>
+        <script>
+                const cartSection = document.getElementById("cart-section");
+                displayCart(cartSection, cartList);
+        </script>
     </body>
 </html>

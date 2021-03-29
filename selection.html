@@ -138,5 +138,16 @@
             </div>
         </footer>
         <script type="text/javascript" src="app.js"></script>
+        <script>
+            let goToCartBtn = document.getElementById("cart-button");
+        if(goToCartBtn) {
+            goToCartBtn.addEventListener("click", () => {                
+                location.href = "./cart.html";
+                console.log("Hello World");
+                const cartSection = document.getElementById("cart-section");
+                displayCart(cartSection, cartList);
+            })
+        }        
+        </script>
     </body>
 </html>
