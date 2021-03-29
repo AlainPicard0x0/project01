@@ -4,6 +4,7 @@ if(document.readyState == "loading") {
 else {
     runApp();
 }
+
 //Shows the number of items in the cart
 const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
 let numberOfItems = 0;
@@ -51,15 +52,12 @@ function runApp() {
             addToCart(currentAddButton);
         })
     }
-
-    let addToCartBtn = document.getElementById("cart-button");
-        addToCartBtn.addEventListener("click", () => {
-            console.log("Hello World");
-            //location.href = "./cart.html"; 
-            //location.replace("./cart.html");
-            const cartSection = document.getElementById("cart-section");
-            displayCart(cartSection, cartList);
-        })
+    let goToCartBtn = document.getElementById("cart-button");
+        if(goToCartBtn) {
+            goToCartBtn.addEventListener("click", () => {                
+                location.href = "./cart.html";
+            })
+        }        
 }
 
 //Check if any drop-down menus are currently open and close them before opening another
