@@ -102,3 +102,11 @@ function displayCart(cartSection, arr) {
         cartSection.appendChild(newItem);
     }
 }
+//Remove items from cart
+function removeItems(cartSection) {
+    cartList = [];
+    localStorage.clear();
+    while(cartSection.hasChildNodes()) {
+        cartSection.removeChild(cartSection.firstChild);
+    }
+}
