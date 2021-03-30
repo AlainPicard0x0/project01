@@ -57,7 +57,13 @@ function runApp() {
             goToCartBtn.addEventListener("click", () => {                
                 location.href = "./cart.html";
             })
-        }        
+        }
+    let emptyCartBtn = document.getElementById("empty-cart");
+    if(emptyCartBtn) {
+        emptyCartBtn.addEventListener("click", () => {
+            removeItems(cartSection);
+        })  
+    }
 }
 
 //Check if any drop-down menus are currently open and close them before opening another
