@@ -207,12 +207,22 @@ footer p{
 #cart-section {
     height: 60vh;
 }
-.cart-container {
+.cart-container{
     width: 65vw;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+#empty-cart{
+    background-image: linear-gradient(#53b6f0, #0d93e0);
+    width: 130px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    margin: 10px;
+    font-size: 1rem;
 }
 
