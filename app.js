@@ -101,9 +101,11 @@ function displayCart(cartSection, arr) {
         console.log(cartList[i]["title"]);
         let newItem = document.createElement("div");
         newItem.classList.add("box");
-        let itemContents = `<img width="250px" height="250px" class="img-src" src="${arr[i]["icon"]}">
-                            <p class="title">${arr[i]["title"]}</p>
-                            <p id="price" class="price">${arr[i]["price"]}</p>`;
+        let itemContents = `<div class="cart-div flex-container">
+                                <img width="75px" height="75px" class="img-src" src="${arr[i]["icon"]}">
+                                <p class="title">${arr[i]["title"]}</p>
+                                <p id="price" class="price">${arr[i]["price"]}</p>
+                            </div>`;
         newItem.innerHTML = itemContents;
         cartSection.appendChild(newItem);
     }

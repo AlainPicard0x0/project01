@@ -33,6 +33,12 @@ body{
     justify-content: space-between;
     align-items: baseline;
 }
+.flex-container-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+}
 header{
     height: 14vh;
     background-color: #fff;
@@ -204,8 +210,11 @@ footer p{
     float: right;
 }
 /*Cart Section*/
-#cart-section {
+#shopping-cart {
     height: 60vh;
+}
+.cart-div{
+    padding: 20px;
 }
 .cart-container{
     width: 65vw;
