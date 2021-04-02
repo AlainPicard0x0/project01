@@ -213,6 +213,9 @@ footer p{
 #shopping-cart {
     height: 60vh;
 }
+#cart-section h2{
+    margin: 10px;
+}
 .cart-div{
     padding: 20px;
 }
