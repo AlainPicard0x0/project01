@@ -7,17 +7,23 @@ else {
 
 //Shows the number of items in the cart
 const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
-let numberOfItems = 0;
+
 //Array to store items added to cart
 let cartList;
+let numberOfItems;
 //Set up localStorage variable
 let data = JSON.parse(localStorage.getItem("savedCart"));
 if(data) {
     cartList = data;
-    console.log(`Cart saved to local storage: ${ cartList }`);
+    numberOfItems = cartList.length;
+    if(itemsInCart) {
+        itemsInCart.innerText = numberOfItems;
+    }
+    console.log("local storage not empty");
 }
 else {
     cartList = [];
+    numberOfItems = 0;
     console.log("local storage is empty");
 }
 
