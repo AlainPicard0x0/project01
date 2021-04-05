@@ -218,11 +218,7 @@ footer p{
     float: right;
 }
 /*Cart Section*/
-#shopping-cart {
-    height: 60vh;
-    margin: auto;
-    width: 100%;
-}
+
 #cart-section h2{
     margin: 10px;
 }
@@ -254,4 +250,3 @@ footer p{
 #price{
     grid-column: 2 / 3;
 }
-
