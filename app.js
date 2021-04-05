@@ -113,7 +113,7 @@ function displayCart(cartSection, arr) {
                                 <p id="price" class="price">${arr[i]["price"]}</p>
                             </div>`;
         newItem.innerHTML = itemContents;
-        cartSection.appendChild(newItem);
+        cartSection.append(newItem);
     }
 }
 //Remove items from cart
