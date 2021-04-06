@@ -250,3 +250,10 @@ footer p{
 #price{
     grid-column: 2 / 3;
 }
+.home-button{
+    width: 8rem;
+    height: 2rem;
+    background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+    color: #fff;
+    border: none;
+}
