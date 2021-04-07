@@ -111,6 +111,7 @@ function displayCart(cartSection, arr) {
                                 <img width="150px" height="150px" class="img-src" src="${arr[i]["icon"]}">
                                 <p class="title">${arr[i]["title"]}</p>
                                 <p id="price" class="price">${arr[i]["price"]}</p>
+                                <button class="remove-item">Remove Item</button>
                             </div>`;
         newItem.innerHTML = itemContents;
         cartSection.append(newItem);
