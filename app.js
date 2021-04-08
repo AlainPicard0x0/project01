@@ -70,6 +70,14 @@ function runApp() {
             removeItems(cartSection);
         })  
     }
+    let removeItemBtn = document.getElementsByClassName("remove-item");
+    for(let i = 0; i < removeItemBtn.length; i++) {
+        let removeItem = removeItemBtn[i];
+        removeItem.addEventListener("click", (e) => {
+            removeItem = e.target;
+            removeSelected(removeItem)
+        })
+    }
 }
 
 //Check if any drop-down menus are currently open and close them before opening another
@@ -124,4 +132,9 @@ function removeItems(cartSection) {
     while(cartSection.hasChildNodes()) {
         cartSection.removeChild(cartSection.firstChild);
     }
+}
+//Remove selected item from card
+function removeSelected(e) {
+    let buttonParent = e.parentElement;
+    buttonParent.remove();
 }
