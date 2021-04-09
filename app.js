@@ -117,10 +117,9 @@ function addToCart(currentAddButton) {
 function displayCart(cartSection, arr) {
     //Get items that have been added to cart
     for(let i = 0; i < arr.length; i++) {
-        console.log(cartList[i]["title"]);
         let newItem = document.createElement("div");
         newItem.classList.add("box");
-        let itemContents = `<div id="${arr[i]["id"]}" class="cart-div grid-container">
+        let itemContents = `<div id="${i}" class="cart-div grid-container">
                                 <img width="150px" height="150px" class="img-src" src="${arr[i]["icon"]}">
                                 <p class="title">${arr[i]["title"]}</p>
                                 <p id="price" class="price">${arr[i]["price"]}</p>
@@ -141,5 +140,8 @@ function removeItems(cartSection) {
 //Remove selected item from card
 function removeSelected(e) {
     let buttonParent = e.parentElement;
+    let itemId = buttonParent.id;
+    cartList.splice(itemId, 1);
+    localStorage.setItem("savedCart", JSON.stringify(cartList));
     buttonParent.remove();
 }
