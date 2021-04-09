@@ -10,12 +10,14 @@ const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
 
 //Array to store items added to cart
 let cartList;
+let id;
 let numberOfItems;
 //Set up localStorage variable
 let data = JSON.parse(localStorage.getItem("savedCart"));
 if(data) {
     cartList = data;
     numberOfItems = cartList.length;
+    id = cartList.length;
     if(itemsInCart) {
         itemsInCart.innerText = numberOfItems;
     }
@@ -24,6 +26,7 @@ if(data) {
 else {
     cartList = [];
     numberOfItems = 0;
+    id = 0;
     console.log("local storage is empty");
 }
 
@@ -98,11 +101,13 @@ function addToCart(currentAddButton) {
         let title = itemContainer.getElementsByClassName("title")[0].innerText;
         let icon = itemContainer.getElementsByClassName("img-src")[0].src;
         cartList.push({
+            "id": id,
             "title": title,
             "price": price,
             "icon": icon 
         });
         localStorage.setItem("savedCart", JSON.stringify(cartList));
+        id++;
         console.log(cartList);
         numberOfItems = cartList.length;
         itemsInCart.innerText = numberOfItems;
@@ -115,7 +120,7 @@ function displayCart(cartSection, arr) {
         console.log(cartList[i]["title"]);
         let newItem = document.createElement("div");
         newItem.classList.add("box");
-        let itemContents = `<div class="cart-div grid-container">
+        let itemContents = `<div id="${arr[i]["id"]}" class="cart-div grid-container">
                                 <img width="150px" height="150px" class="img-src" src="${arr[i]["icon"]}">
                                 <p class="title">${arr[i]["title"]}</p>
                                 <p id="price" class="price">${arr[i]["price"]}</p>
