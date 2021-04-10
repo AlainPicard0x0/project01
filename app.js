@@ -144,4 +144,5 @@ function removeSelected(e) {
     cartList.splice(itemId, 1);
     localStorage.setItem("savedCart", JSON.stringify(cartList));
     buttonParent.remove();
+    location.reload();
 }
