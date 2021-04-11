@@ -57,7 +57,7 @@ header{
 }
 #branding h1{
     color: rgb(231, 63, 2);
-    display: inline;
+    /* display: inline; */
 }
 .dropdown{
     background-color: none;
