@@ -100,11 +100,13 @@ function addToCart(currentAddButton) {
         let price = itemContainer.getElementsByClassName("price")[0].innerText;
         let title = itemContainer.getElementsByClassName("title")[0].innerText;
         let icon = itemContainer.getElementsByClassName("img-src")[0].src;
+        let details = itemContainer.getElementsByClassName("details")[0].innerText;
         cartList.push({
             "id": id,
             "title": title,
             "price": price,
-            "icon": icon 
+            "icon": icon,
+            "details": details
         });
         localStorage.setItem("savedCart", JSON.stringify(cartList));
         id++;
@@ -123,6 +125,7 @@ function displayCart(cartSection, arr) {
                                 <img width="150px" height="150px" class="img-src" src="${arr[i]["icon"]}">
                                 <p class="title">${arr[i]["title"]}</p>
                                 <p id="price" class="price">${arr[i]["price"]}</p>
+                                <p class="details">${arr[i]["details"]}</p>
                                 <button class="remove-item">Remove Item</button>
                             </div>`;
         newItem.innerHTML = itemContents;
