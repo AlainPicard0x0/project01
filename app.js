@@ -21,13 +21,11 @@ if(data) {
     if(itemsInCart) {
         itemsInCart.innerText = numberOfItems;
     }
-    console.log("local storage not empty");
 }
 else {
     cartList = [];
     numberOfItems = 0;
     id = 0;
-    console.log("local storage is empty");
 }
 
 
@@ -122,7 +120,7 @@ function displayCart(cartSection, arr) {
         let newItem = document.createElement("div");
         newItem.classList.add("box");
         let itemContents = `<div id="${i}" class="cart-div grid-container">
-                                <img width="150px" height="150px" class="img-src" src="${arr[i]["icon"]}">
+                                <img class="cart-img" width="150px" height="150px" class="img-src" src="${arr[i]["icon"]}">
                                 <p class="title">${arr[i]["title"]}</p>
                                 <p id="price" class="price">${arr[i]["price"]}</p>
                                 <p class="details">${arr[i]["details"]}</p>
