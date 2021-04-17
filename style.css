@@ -248,11 +248,11 @@ footer p{
     grid-area: 5 / 10 / 7 / 12;
 }
 .details{
-    grid-area: 3 / 5 / 5 / 8;
+    grid-area: 2 / 3 / 5 / 8;
 }
 
-/* grid-template-columns: repeat(12 1fr);
-    grid-template-rows: repeat(6 1fr); */
+/* grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr); */
 .home-button{
     width: 8rem;
     height: 2rem;
