@@ -264,3 +264,8 @@ footer p{
 .shopping-cart-h2{
     margin: 0 30px;
 }
+.checkout{
+    min-height: 350px;
+    width: 250px;
+    border: solid 3px #000;
+}
