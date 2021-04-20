@@ -42,6 +42,10 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(7, 1fr);
 }
+#checkout-section{
+    display: flex;
+    justify-content: flex-end;
+}
 header{
     height: 14vh;
     background-color: #fff;
@@ -267,5 +271,8 @@ footer p{
 .checkout{
     min-height: 350px;
     width: 250px;
-    border: solid 3px #000;
+    border: solid 1px #000;
+    margin: 5px 27px;
+    display: flex;
+    justify-content: center;
 }
