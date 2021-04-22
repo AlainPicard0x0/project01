@@ -217,6 +217,9 @@ footer p{
     float: right;
 }
 /*Cart Section*/
+#cart-header{
+    text-align: center;
+}
 
 #cart-section h2{
     margin: 10px;
