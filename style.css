@@ -42,10 +42,6 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(7, 1fr);
 }
-#checkout-section{
-    display: flex;
-    justify-content: space-between;
-}
 header{
     height: 14vh;
     background-color: #fff;
@@ -213,12 +209,14 @@ footer p{
     color:rgb(182, 51, 3);
     cursor: pointer;
 }
-.shopping-cart{
+/* .shopping-cart{
     float: right;
-}
+} */
 /*Cart Section*/
 #cart-header{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
 }
 
 #cart-section h2{
@@ -269,7 +267,7 @@ footer p{
     border: none;
 }
 .shopping-cart-h2{
-    margin: 0 30px;
+    margin: 5px 30px;
 }
 .checkout{
     min-height: 350px;
