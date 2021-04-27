@@ -170,6 +170,9 @@ footer p{
     justify-content: space-evenly;
     align-items: center;
 }
+#branding a{
+    text-decoration: none;
+}
 #selection-container{
     margin: 10px;
 }
