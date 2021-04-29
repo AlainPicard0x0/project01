@@ -282,6 +282,13 @@ footer p{
     margin: 5px 27px;
     text-align: center;
 }
+.checkout h3{
+    text-align: left;
+}
+.your-order-h3{
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
 
 /* .shopping-cart-h2 hr{
     margin-top: 30px;
@@ -307,8 +314,8 @@ footer p{
 }
 .continue-shopping h3{
     color: #777;
-    position: relative;
-    right: 65px;
+    /* position: relative;
+    right: 65px; */
 }
 .continue-shopping a{
     text-decoration: none;
