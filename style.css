@@ -321,3 +321,6 @@ footer p{
 .continue-shopping a{
     text-decoration: none;
 }
+.cart-items{
+    display: flex;
+}
