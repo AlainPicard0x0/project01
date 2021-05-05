@@ -59,18 +59,21 @@ function runApp() {
             addToCart(currentAddButton);
         })
     }
+
     let goToCartBtn = document.getElementById("cart-button");
-        if(goToCartBtn) {
-            goToCartBtn.addEventListener("click", () => {                
-                location.href = "./cart.html";
-            })
-        }
-    let emptyCartBtn = document.getElementById("empty-cart");
-    if(emptyCartBtn) {
-        emptyCartBtn.addEventListener("click", () => {
-            removeItems(cartSection);
-        })  
+    if(goToCartBtn) {
+        goToCartBtn.addEventListener("click", () => {                
+            location.href = "./cart.html";
+        })
     }
+    // Removed empty-cart button from html so don't need this code
+    // let emptyCartBtn = document.getElementById("empty-cart");
+    // if(emptyCartBtn) {
+    //     emptyCartBtn.addEventListener("click", () => {
+    //         removeItems(cartSection);
+    //     })  
+    // }
+
     let removeItemBtn = document.getElementsByClassName("remove-item");
     for(let i = 0; i < removeItemBtn.length; i++) {
         let removeItem = removeItemBtn[i];
