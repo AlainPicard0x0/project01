@@ -150,3 +150,16 @@ function removeSelected(e) {
     buttonParent.remove();
     location.reload();
 }
+
+//Add items in shopping cart to shopping cart display and give totals
+function displayItemsInCart(cartContainer, cartItems) {    
+    //create divs for each cart item
+    for(let i = 0; i < cartItems.length; i++) {
+        let newListItem = document.createElement("div");
+        let itemContents = `<p>${i}</p>`;
+        newListItem.innerHTML = itemContents;
+        cartItemContainer.append(newListItem);
+    }
+}
+
+
