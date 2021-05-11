@@ -152,11 +152,11 @@ function removeSelected(e) {
 }
 
 //Add items in shopping cart to shopping cart display and give totals
-function displayItemsInCart(cartContainer, cartItems) {    
+function displayItemsInCart(cartContainer, arr) {    
     //create divs for each cart item
-    for(let i = 0; i < cartItems.length; i++) {
+    for(let i = 0; i < arr.length; i++) {
         let newListItem = document.createElement("div");
-        let itemContents = `<p>${i}</p>`;
+        let itemContents = `<img src="${arr[i]["icon"]}" width="60px" height="60px">`;
         newListItem.innerHTML = itemContents;
         cartItemContainer.append(newListItem);
     }
