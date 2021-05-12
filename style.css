@@ -322,5 +322,9 @@ footer p{
     text-decoration: none;
 }
 .cart-items{
+    padding: 5px;
+}
+.item-container{
     display: flex;
+    justify-content: space-around;
 }
