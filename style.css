@@ -43,7 +43,7 @@ body{
     grid-template-rows: repeat(7, 1fr);
 }
 header{
-    height: 14vh;
+    min-height: 14vh;
     background-color: #fff;
     border-bottom: solid 1px #fff;
 }
@@ -219,7 +219,7 @@ footer p{
 #cart-header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 220px;
+    /*margin-bottom: 220px;*/
 }
 #cart-section{
     margin: 20px 0;
@@ -308,6 +308,7 @@ footer p{
     border: none;
     color: #fff;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 .continue-shopping{
     background-color: #f4f4f4;
