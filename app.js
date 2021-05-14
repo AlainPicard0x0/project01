@@ -159,9 +159,9 @@ function displayItemsInCart(cartContainer, arr) {
         newListItem.className = "item-container";
         let itemContents = `<div>
                                 <img src="${arr[i]["icon"]}" width="60px" height="60px">
-                                <p>${arr[i]["title"]}</p>
                             </div>
                             <div>
+                                <p>${arr[i]["title"]}</p>
                                 <p>${arr[i]["price"]}</p>
                             </div>`;
         newListItem.innerHTML = itemContents;
