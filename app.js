@@ -164,7 +164,8 @@ function displayItemsInCart(cartContainer, arr) {
                                 <p>${arr[i]["title"]}</p>
                             </div>
                             <div class="item-price-container">
-                                <p>${arr[i]["price"]}</p>
+                                <p>Price: ${arr[i]["price"]}</p>
+                                <hr>
                             </div>`;
         newListItem.innerHTML = itemContents;
         cartItemContainer.append(newListItem);
