@@ -32,12 +32,8 @@ else {
 
 
 function runApp() {
-    const cartSection = document.getElementById("cart-section");
-    displayCart(cartSection, cartList);
-    cartItemContainer = document.getElementsByClassName("cart-items")[0];
-    displayItemsInCart(cartItemContainer, cartList);
+    
     const cartTotal = document.getElementById("cart-total");
-    console.log(cartTotal);
     let dropDown = document.getElementsByClassName("dropdown-button");
     for(let i = 0; i < dropDown.length; i++) {
         let dropdownDisplay = dropDown[i];        
