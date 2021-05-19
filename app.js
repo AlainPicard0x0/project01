@@ -12,6 +12,7 @@ const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
 let cartList;
 let id;
 let numberOfItems;
+let cartContainer;
 //Set up localStorage variable
 let data = JSON.parse(localStorage.getItem("savedCart"));
 if(data) {
@@ -31,6 +32,12 @@ else {
 
 
 function runApp() {
+    const cartSection = document.getElementById("cart-section");
+    displayCart(cartSection, cartList);
+    cartItemContainer = document.getElementsByClassName("cart-items")[0];
+    displayItemsInCart(cartItemContainer, cartList);
+    const cartTotal = document.getElementById("cart-total");
+    console.log(cartTotal);
     let dropDown = document.getElementsByClassName("dropdown-button");
     for(let i = 0; i < dropDown.length; i++) {
         let dropdownDisplay = dropDown[i];        
@@ -119,6 +126,7 @@ function addToCart(currentAddButton) {
 //Need to display items in cart
 function displayCart(cartSection, arr) {
     //Get items that have been added to cart
+    let total = 0;
     for(let i = 0; i < arr.length; i++) {
         let newItem = document.createElement("div");
         newItem.classList.add("box");
@@ -131,7 +139,13 @@ function displayCart(cartSection, arr) {
                             </div>`;
         newItem.innerHTML = itemContents;
         cartSection.append(newItem);
+        //Add total of cart items        
+        let price = parseFloat(arr[i]["price"].replace("$", ""));
+        console.log(price);
+        total += price;
     }
+    //total = Math.round(total * 100) / 100;
+    console.log(total);
 }
 //Remove items from cart
 function removeItems(cartSection) {
