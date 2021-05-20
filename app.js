@@ -140,8 +140,9 @@ function displayCart(cartSection, arr) {
         console.log(price);
         total += price;
     }
-    //total = Math.round(total * 100) / 100;
-    console.log(total);
+    //Get cart total container and display total
+    let cartTotalContainer = document.getElementById("cart-total");
+    cartTotalContainer.innerText = "$" + total;
 }
 //Remove items from cart
 function removeItems(cartSection) {
