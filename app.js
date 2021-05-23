@@ -37,7 +37,10 @@ function runApp() {
     let dropDown = document.getElementsByClassName("dropdown-button");
     //Run completePurchase() function when check out button is clicked
     let checkOutBtn = document.getElementById("checkout-btn");
-    checkOutBtn.addEventListener("click", completePurchase)
+    if(checkOutBtn) {
+        checkOutBtn.addEventListener("click", completePurchase);
+    }
+    
 
     for(let i = 0; i < dropDown.length; i++) {
         let dropdownDisplay = dropDown[i];        
@@ -141,12 +144,11 @@ function displayCart(cartSection, arr) {
         cartSection.append(newItem);
         //Add total of cart items        
         let price = parseFloat(arr[i]["price"].replace("$", ""));
-        console.log(price);
         total += price;
     }
     //Get cart total container and display total
     let cartTotalContainer = document.getElementById("cart-total");
-    cartTotalContainer.innerText = "$" + total;
+    total !== 0 ? cartTotalContainer.innerText = "$" + total : cartTotalContainer.innerText = "$0.00";
 }
 //Remove items from cart
 function removeItems(cartSection) {
@@ -194,6 +196,11 @@ function completePurchase() {
     }
     let cartTotalContainer = document.getElementById("cart-total");
     cartTotalContainer.innerText = "$0.00";
+    removeItems(cartSection);
+    localStorage.clear();
+    setTimeout(() => {
+        alert("Thank you for your purchase");
+    }, 500);
 }
 
 
