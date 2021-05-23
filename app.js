@@ -35,6 +35,10 @@ function runApp() {
     
     const cartTotal = document.getElementById("cart-total");
     let dropDown = document.getElementsByClassName("dropdown-button");
+    //Run completePurchase() function when check out button is clicked
+    let checkOutBtn = document.getElementById("checkout-btn");
+    checkOutBtn.addEventListener("click", completePurchase)
+
     for(let i = 0; i < dropDown.length; i++) {
         let dropdownDisplay = dropDown[i];        
         dropdownDisplay.addEventListener("click", (e) => {  
@@ -181,6 +185,15 @@ function displayItemsInCart(cartContainer, arr) {
         newListItem.innerHTML = itemContents;
         cartItemContainer.append(newListItem);
     }
+}
+
+//Remove items from cart when Checkout button clicked and reset total
+function completePurchase() {
+    while(cartItemContainer.hasChildNodes()) {
+        cartItemContainer.removeChild(cartItemContainer.firstChild);
+    }
+    let cartTotalContainer = document.getElementById("cart-total");
+    cartTotalContainer.innerText = "$0.00";
 }
 
 
