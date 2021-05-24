@@ -43,9 +43,12 @@ body{
     grid-template-rows: repeat(7, 1fr);
 }
 header{
-    min-height: 7vh;
+    /* min-height: 7vh; */
     background-color: #fff;
     border-bottom: solid 1px #fff;
+}
+.index-header{
+    height: 10vh;
 }
 #branding{
     margin: 30px;
@@ -68,7 +71,8 @@ header{
 .dropdown-content{
     display: none;
     min-width: 160px;
-    background-color: rgb(255,255,255, 0.7);
+    background-color: rgba(245, 245, 245, 0.7);
+    border: 1px solid #333;
 }
 .show{
     display: block;
@@ -261,9 +265,6 @@ footer p{
 .details{
     grid-area: 2 / 3 / 5 / 8;
 }
-
-/* grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr); */
 .home-button{
     width: 8rem;
     height: 2rem;
@@ -274,7 +275,6 @@ footer p{
 .shopping-cart-h2{
     margin: 0 30px;
 }
-
 .checkout{
     min-height: 270px;
     width: 250px;
