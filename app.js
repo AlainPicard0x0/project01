@@ -61,6 +61,13 @@ function runApp() {
             drop.classList.toggle("show");
         });
     }
+    //Close drop down menu if click happens outside of the dropdown menu
+    document.addEventListener("click", (e) => {
+        let clicked = e.target;
+        if(!clicked.classList.contains("fa")) {
+            closeDropMenu();
+        }
+    })
     
     let addButton = document.getElementsByClassName("add-to-cart");
     for(let i = 0; i < addButton.length; i++) {
