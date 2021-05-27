@@ -64,7 +64,7 @@ function runApp() {
     //Close drop down menu if click happens outside of the dropdown menu
     document.addEventListener("click", (e) => {
         let clicked = e.target;
-        if(!clicked.classList.contains("fa")) {
+        if(!clicked.classList.contains("fa") && !clicked.classList.contains("dropdown-button")) {
             closeDropMenu();
         }
     })
