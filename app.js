@@ -62,9 +62,10 @@ function runApp() {
         });
     }
     //Close drop down menu if click happens outside of the dropdown menu
+    //Added && document.URL.includes so that event listener is only added when on home page(index.html)
     document.addEventListener("click", (e) => {
         let clicked = e.target;
-        if(!clicked.classList.contains("fa") && !clicked.classList.contains("dropdown-button")) {
+        if(!clicked.classList.contains("fa") && !clicked.classList.contains("dropdown-button") && document.URL.includes("index.html")) {
             closeDropMenu();
         }
     })
