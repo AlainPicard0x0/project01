@@ -208,7 +208,7 @@ function completePurchase() {
     localStorage.clear();
     setTimeout(() => {
         alert("Thank you for your purchase");
-    }, 500);
+    }, 0);
 }
 
 
