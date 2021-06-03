@@ -102,6 +102,10 @@ function runApp() {
     }
 }
 
+//Get the value of the last element added to the cart
+//If value is from selection.html page, make <continue shopping button navigate back to that page. If value was from 
+//selection02.html, make <continue shopping button navigate back to that page and so on.
+
 //Check if any drop-down menus are currently open and close them before opening another
 function closeDropMenu() { 
         console.log("closeDropMenu fired off")
@@ -209,6 +213,8 @@ function completePurchase() {
     setTimeout(() => {
         alert("Thank you for your purchase");
     }, 0);
+
+
 }
 
 
