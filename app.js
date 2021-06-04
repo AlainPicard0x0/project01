@@ -19,6 +19,7 @@ if(data) {
     cartList = data;
     numberOfItems = cartList.length;
     id = cartList.length;
+    console.log(cartList);
     if(itemsInCart) {
         itemsInCart.innerText = numberOfItems;
     }
@@ -124,12 +125,15 @@ function addToCart(currentAddButton) {
         let title = itemContainer.getElementsByClassName("title")[0].innerText;
         let icon = itemContainer.getElementsByClassName("img-src")[0].src;
         let details = itemContainer.getElementsByClassName("details")[0].innerText;
+        let pageNumber = itemContainer.dataset.pageNumber;
+        console.log(pageNumber);
         cartList.push({
             "id": id,
             "title": title,
             "price": price,
             "icon": icon,
-            "details": details
+            "details": details,
+            // "pageNumber": pageNumber
         });
         localStorage.setItem("savedCart", JSON.stringify(cartList));
         id++;
