@@ -133,7 +133,7 @@ function addToCart(currentAddButton) {
             "price": price,
             "icon": icon,
             "details": details,
-            // "pageNumber": pageNumber
+            "pageNumber": pageNumber
         });
         localStorage.setItem("savedCart", JSON.stringify(cartList));
         id++;
