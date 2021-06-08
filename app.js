@@ -104,9 +104,11 @@ function runApp() {
 
     //Get continue shopping button and add eventListener
     const continueShoppingBtn = document.getElementById("continue-shopping-btn");
-    continueShoppingBtn.addEventListener("click", () => {
-        console.log("Continue btn clicked");
-    })
+    if(continueShoppingBtn) {
+        continueShoppingBtn.addEventListener("click", () => {
+            console.log("Continue btn clicked");
+        })
+    }
 }
 
 //Get the value of the last element added to the cart
