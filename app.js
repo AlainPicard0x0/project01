@@ -101,11 +101,20 @@ function runApp() {
             removeSelected(removeItem)
         })
     }
+
+    //Get continue shopping button and add eventListener
+    const continueShoppingBtn = document.getElementById("continue-shopping-btn");
+    continueShoppingBtn.addEventListener("click", () => {
+        console.log("Continue btn clicked");
+    })
 }
 
 //Get the value of the last element added to the cart
 //If value is from selection.html page, make <continue shopping button navigate back to that page. If value was from 
 //selection02.html, make <continue shopping button navigate back to that page and so on.
+function continueShopping() {
+    
+}
 
 //Check if any drop-down menus are currently open and close them before opening another
 function closeDropMenu() { 
