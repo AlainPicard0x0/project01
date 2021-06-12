@@ -13,6 +13,8 @@ let cartList;
 let id;
 let numberOfItems;
 let cartContainer;
+//Set page number variable up
+let pageNum = "02";
 //Set up localStorage variable
 let data = JSON.parse(localStorage.getItem("savedCart"));
 if(data) {
@@ -85,14 +87,7 @@ function runApp() {
             location.href = "./cart.html";
         })
     }
-    // Removed empty-cart button from html so don't need this code
-    // let emptyCartBtn = document.getElementById("empty-cart");
-    // if(emptyCartBtn) {
-    //     emptyCartBtn.addEventListener("click", () => {
-    //         removeItems(cartSection);
-    //     })  
-    // }
-
+   
     let removeItemBtn = document.getElementsByClassName("remove-item");
     for(let i = 0; i < removeItemBtn.length; i++) {
         let removeItem = removeItemBtn[i];
@@ -106,7 +101,7 @@ function runApp() {
     const continueShoppingBtn = document.getElementById("continue-shopping-btn");
     if(continueShoppingBtn) {
         continueShoppingBtn.addEventListener("click", () => {
-            console.log("Continue btn clicked");
+            continueShopping(continueShoppingBtn);
         })
     }
 }
@@ -114,8 +109,9 @@ function runApp() {
 //Get the value of the last element added to the cart
 //If value is from selection.html page, make <continue shopping button navigate back to that page. If value was from 
 //selection02.html, make <continue shopping button navigate back to that page and so on.
-function continueShopping() {
-    
+function continueShopping(buttonElement) {
+    const pageHref = `./selection${pageNum}.html`;
+    buttonElement.href = pageHref;
 }
 
 //Check if any drop-down menus are currently open and close them before opening another
