@@ -14,7 +14,7 @@ let id;
 let numberOfItems;
 let cartContainer;
 //Set page number variable up
-let pageNum = "02";
+let pageNum;
 //Set up localStorage variable
 let data = JSON.parse(localStorage.getItem("savedCart"));
 if(data) {
@@ -110,7 +110,14 @@ function runApp() {
 //If value is from selection.html page, make <continue shopping button navigate back to that page. If value was from 
 //selection02.html, make <continue shopping button navigate back to that page and so on.
 function continueShopping(buttonElement) {
-    const pageHref = `./selection${pageNum}.html`;
+    let pageHref;
+    if(pageNum) {
+        pageHref = `./selection${pageNum}.html`;
+    }
+    else {
+        pageHref = "./selection.html";
+    }
+    
     buttonElement.href = pageHref;
 }
 
@@ -172,6 +179,12 @@ function displayCart(cartSection, arr) {
     //Get cart total container and display total
     let cartTotalContainer = document.getElementById("cart-total");
     total !== 0 ? cartTotalContainer.innerText = "$" + total : cartTotalContainer.innerText = "$0.00";
+    //Get the page number attribute of the last item in the array and save it to our pageNum variable
+    if(arr.length > 0) {
+        //let pageAttribute = arr[arr.length-1]["pageNumber"];
+        //pageNum = pageAttribute.toString() || "01";
+        pageNum = arr[arr.length-1]["pageNumber"];
+    }
 }
 //Remove items from cart
 function removeItems(cartSection) {
