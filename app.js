@@ -115,7 +115,7 @@ function continueShopping(buttonElement) {
         pageHref = `./selection${pageNum}.html`;
     }
     else {
-        pageHref = "./selection.html";
+        pageHref = "./selection01.html";
     }
     
     buttonElement.href = pageHref;
