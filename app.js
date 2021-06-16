@@ -182,6 +182,8 @@ function displayCart(cartSection, arr) {
         let price = parseFloat(arr[i]["price"].replace("$", ""));
         total += price;
     }
+    //Ensure total only has 2 decimal places
+    total = Math.round(total * 100) / 100;
     //Get cart total container and display total
     let cartTotalContainer = document.getElementById("cart-total");
     total !== 0 ? cartTotalContainer.innerText = "$" + total : cartTotalContainer.innerText = "$0.00";
