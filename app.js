@@ -244,8 +244,7 @@ function completePurchase() {
     setTimeout(() => {
         alert("Thank you for your purchase");
     }, 0);
-
-
+    
 }
 
 
