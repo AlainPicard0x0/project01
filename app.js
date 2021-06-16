@@ -41,7 +41,13 @@ function runApp() {
     //Run completePurchase() function when check out button is clicked
     let checkOutBtn = document.getElementById("checkout-btn");
     if(checkOutBtn) {
-        checkOutBtn.addEventListener("click", completePurchase);
+        if(cartList.length >= 1) {
+            checkOutBtn.addEventListener("click", completePurchase);
+        }
+        else {
+            checkOutBtn.removeEventListener("click", completePurchase);
+        }
+        
     }
     
 
@@ -234,6 +240,7 @@ function completePurchase() {
     cartTotalContainer.innerText = "$0.00";
     removeItems(cartSection);
     localStorage.clear();
+    location.reload();
     setTimeout(() => {
         alert("Thank you for your purchase");
     }, 0);
