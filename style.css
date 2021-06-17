@@ -216,6 +216,14 @@ footer p{
     color:rgb(182, 51, 3);
     cursor: pointer;
 }
+#cart-button{
+    width: 7rem;
+    height: 1.8rem;
+    border: 1px solid #aaa;
+    box-shadow: 1px 1px 1px #888;
+    border-radius: 5px;
+    background-image: linear-gradient(#edf053, #cbe00d);
+}
 
 
 
