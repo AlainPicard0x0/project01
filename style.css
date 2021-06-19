@@ -190,6 +190,7 @@ footer p{
     background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
     color: #fff;
     border: none;
+    border-radius: 5px;
 }
 .cart-icon{
     margin: 0 5px 0 0; 
