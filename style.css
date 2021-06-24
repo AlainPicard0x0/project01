@@ -56,6 +56,9 @@ header{
 #branding h1{
     color: rgb(231, 63, 2);
 }
+.navbar{
+    position: relative;
+}
 .dropdown{
     background-color: none;
     width: 12vw;
