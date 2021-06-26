@@ -334,7 +334,7 @@ footer p{
     margin-bottom: 10px;
 }
 .continue-shopping{
-    background-color: #f4f4f4;
+    background-image: linear-gradient(#edf053, #cbe00d);
     padding: 5px;
 }
 .continue-shopping h3{
