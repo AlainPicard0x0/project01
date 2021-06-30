@@ -346,6 +346,9 @@ footer p{
 .continue-shopping a{
     text-decoration: none;
 }
+.continue-shopping a:hover{
+    cursor: pointer;
+}
 .cart-items{
     padding: 5px;
 }
