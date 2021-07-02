@@ -71,6 +71,9 @@ header{
     padding: 14px;
     background-color: #fff;
 }
+.dropdown-button:hover{
+    cursor: pointer;
+}
 .dropdown-content{
     display: none;
     min-width: 160px;
