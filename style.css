@@ -565,6 +565,9 @@ footer p{
     .cart-div .title{
         font-size: 1.2rem;
     }
+    #checkout-btn:hover{
+        cursor: pointer;
+    }
     #empty-cart, .remove-item{
         font-size: 0.8rem;
     }
