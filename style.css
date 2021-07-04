@@ -201,6 +201,9 @@ footer p{
     border: none;
     border-radius: 5px;
 }
+.add-to-cart:hover{
+    cursor: pointer;
+}
 .cart-icon{
     margin: 0 5px 0 0; 
     display: inline-block;   
