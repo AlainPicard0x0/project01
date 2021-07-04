@@ -284,6 +284,9 @@ footer p{
     margin: 10px;
     font-size: 1rem;
 }
+.remove-item:hover{
+    cursor: pointer;
+}
 .title{
     grid-area: 1 / 1 / 2 / 3;
 }
