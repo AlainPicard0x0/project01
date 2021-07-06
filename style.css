@@ -262,7 +262,8 @@ footer p{
 }
 #cart-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    margin-left: 110px;
 }
 #cart-section h2{
     margin: 10px;
