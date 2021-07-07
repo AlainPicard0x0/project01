@@ -258,7 +258,7 @@ footer p{
     margin: 20px 0;
 }
 .checkout{
-    grid-area: 1 / 11 / 8 / 13; 
+    grid-area: 1 / 11 / 3 / 13; 
 }
 #cart-header{
     display: flex;
