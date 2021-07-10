@@ -103,6 +103,9 @@ header{
     float: left;
     margin-top: 150px;
 }
+#showcase-main{
+    color:#edf053;
+}
 .box{
     margin-bottom: 25px;
 }
