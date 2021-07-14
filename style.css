@@ -392,19 +392,15 @@ footer p{
 @media(max-width: 1680px) {
     body{
         font-size: 0.7rem;
+        background-color: #edf053;
     }
     .container{
         width: 95%;
     }
     
     .grid-container{
-        display: grid;
         margin: 5px auto;
         width: 80vw;
-        min-height: 275px;
-        justify-content: center;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 1fr);
     }
 
     .index-header{
