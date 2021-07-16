@@ -406,10 +406,9 @@ footer p{
     #branding{
         margin: 25px;
     }
-    
-    .navbar{
-        position: relative;
-    }
+
+    /*Left off here */
+  
     .dropdown{
         background-color: none;
         width: 12vw;
