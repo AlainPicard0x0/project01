@@ -406,21 +406,14 @@ footer p{
     #branding{
         margin: 25px;
     }
-
-    /*Left off here */
-  
+     
     .dropdown{
         background-color: none;
         width: 12vw;
     }
-    .dropdown-button{
-        border: none;
-        outline: none;
-        font-size: 1.0rem;
-        color: rgb(231,63,2);
-        padding: 14px;
-        background-color: #fff;
-    }
+
+     /*Left off here */
+    
     .dropdown-content{
         display: none;
         min-width: 160px;
