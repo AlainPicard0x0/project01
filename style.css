@@ -410,10 +410,7 @@ footer p{
     .dropdown{
         background-color: none;
         width: 12vw;
-    }
-
-     /*Left off here */
-    
+    }    
     .dropdown-content{
         display: none;
         min-width: 160px;
@@ -423,15 +420,7 @@ footer p{
     .show{
         display: block;
     }
-    .dropdown-content a{
-        float: none;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: #000;
-        padding: 3px;
-        font-size: 0.8rem;
-    }
+    /*Left off here */
     #showcase{
         height: 75vh;
         background: url("./assets/iphone-6.jpg") no-repeat 0 -120px;
