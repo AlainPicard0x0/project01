@@ -417,9 +417,7 @@ footer p{
         background-color: rgba(245, 245, 245, 0.7);
         border: 1px solid #333;
     }
-    .show{
-        display: block;
-    }
+    
     /*Left off here */
     #showcase{
         height: 75vh;
