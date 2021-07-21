@@ -396,18 +396,23 @@ footer p{
     }
     .container{
         width: 95%;
-    }    
+    }
+    
     .grid-container{
         margin: 5px auto;
         width: 80vw;
-    }    
+    }
+    
     #branding{
         margin: 25px;
-    }     
+    }
+     
     .dropdown{
         background-color: none;
         width: 12vw;
-    } 
+    }    
+    
+    /*Left off here */
     #showcase{
         height: 75vh;
         background: url("./assets/iphone-6.jpg") no-repeat 0 -120px;
@@ -435,8 +440,11 @@ footer p{
         margin: 10px;
         font-size: 0.8rem;
     }
-
-    /*Left off here */
+    #bottom-showcase{
+        background: url("./assets/iphone.jpeg") no-repeat 0 -140px;
+        background-size: cover;
+        height: 40vh;
+    }
     
 
     #footer-border{
