@@ -411,12 +411,7 @@ footer p{
         background-color: none;
         width: 12vw;
     }    
-    .dropdown-content{
-        display: none;
-        min-width: 160px;
-        background-color: rgba(245, 245, 245, 0.7);
-        border: 1px solid #333;
-    }
+    
     
     /*Left off here */
     #showcase{
