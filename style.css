@@ -405,15 +405,12 @@ footer p{
     
     #branding{
         margin: 25px;
-    } 
+    }     
     
-    
-    /*Left off here */
     #showcase{
         height: 75vh;
         background: url("./assets/iphone-6.jpg") no-repeat 0 -120px;
         background-size: cover;
-        background-color: #f4f4f4;
     }
     #showcase-text{
         font-size: 1.4rem;
@@ -436,11 +433,8 @@ footer p{
         margin: 10px;
         font-size: 0.8rem;
     }
-    #bottom-showcase{
-        background: url("./assets/iphone.jpeg") no-repeat 0 -140px;
-        background-size: cover;
-        height: 40vh;
-    }
+ 
+    /*Left off here */
     
     footer p{
         margin: 15px 80px 10px 80px;
