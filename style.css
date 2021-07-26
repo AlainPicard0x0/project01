@@ -434,11 +434,8 @@ footer p{
         font-size: 0.8rem;
     }
  
-    /*Left off here - #footer-border */
+    /*Left off here - #newsletter */
     
-    #newsletter{
-        margin: 100px 10px;
-    }
     #fname,#lname{
         width: 13vw;
         height: 6vh;
