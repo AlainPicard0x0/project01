@@ -164,6 +164,7 @@ footer p{
     height: 6vh;
     padding: 2px
 }
+
 #email{
     width: 26vw;
     height: 6vh;
@@ -434,13 +435,8 @@ footer p{
         font-size: 0.8rem;
     }
  
-    /*Left off here - #newsletter */
+    /*Left off here - #fname,#lname */
     
-    #fname,#lname{
-        width: 13vw;
-        height: 6vh;
-        padding: 2px
-    }
     #email{
         width: 26vw;
         height: 6vh;
