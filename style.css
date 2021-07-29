@@ -435,13 +435,8 @@ footer p{
         font-size: 0.8rem;
     }
  
-    /*Left off here - #fname,#lname */
+    /*Left off here - #email */
     
-    #email{
-        width: 26vw;
-        height: 6vh;
-        display: block;
-    }
     #newsletter-button{
         width: 26vw;
         height: 6vh;
