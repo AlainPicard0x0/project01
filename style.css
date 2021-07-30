@@ -435,15 +435,8 @@ footer p{
         font-size: 0.8rem;
     }
  
-    /*Left off here - #email */
+    /*Left off here - #newsletter-button */
     
-    #newsletter-button{
-        width: 26vw;
-        height: 6vh;
-        display: block;
-        background-color: #000;
-        color: rgb(231,63,2);
-    }
     .models li{
         list-style: none;
         text-align: left;
