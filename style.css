@@ -435,16 +435,11 @@ footer p{
         font-size: 0.8rem;
     }
  
-    /*Left off here - #newsletter-button */
+    /*Left off here - .models li */
     
-    .models li{
-        list-style: none;
-        text-align: left;
-        padding: 6px;
-    }
+    
     /*selection.html page*/
-    
-    
+       
     #selection-container{
         margin: 25px;
         padding: 15px;
