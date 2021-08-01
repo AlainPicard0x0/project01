@@ -211,6 +211,9 @@ footer p{
 .add-to-cart:hover{
     cursor: pointer;
 }
+
+
+
 .cart-icon{
     margin: 0 5px 0 0; 
     display: inline-block;   
@@ -433,10 +436,7 @@ footer p{
     #mid-page p{
         margin: 10px;
         font-size: 0.8rem;
-    }
- 
-    /*Left off here - .models li */
-    
+    }  
     
     /*selection.html page*/
        
@@ -456,10 +456,9 @@ footer p{
         border: none;
         border-radius: 5px;
     }
-    .cart-icon{
-        margin: 0 5px 0 0; 
-        display: inline-block;   
-    }
+    
+    /*Left off here - .cart-icon */
+
     .cart-num{
         color:#fff;
         text-align: center;
