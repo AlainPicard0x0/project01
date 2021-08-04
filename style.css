@@ -176,7 +176,6 @@ footer p{
     background-color: #000;
     color: rgb(231,63,2);
 }
-
 .models li{
     list-style: none;
     text-align: left;
@@ -215,9 +214,6 @@ footer p{
     margin: 0 5px 0 0; 
     display: inline-block;   
 }
-
-
-
 .cart-num{
     color:#fff;
     text-align: center;
@@ -229,6 +225,10 @@ footer p{
     height: 2rem;
     display: inline-block;
 }
+
+
+
+
 .cart-num p{
     text-align: center;
     margin-top: .3rem;
@@ -457,12 +457,9 @@ footer p{
         border-radius: 5px;
     }
     
-    /*Left off here - .cart-num */
+    /*Left off here - .cart-num p */
 
-    .cart-num p{
-        text-align: center;
-        margin-top: .3rem;
-    }
+    
     
     #cart-button{
         width: 6rem;
