@@ -248,11 +248,7 @@ footer p{
     cursor: pointer;
 }
 
-
 /*******************Cart Section*******************/
-
-
-
 
 #cart-container{
     display: grid;
@@ -315,6 +311,10 @@ footer p{
 .details{
     grid-area: 2 / 3 / 5 / 8;
 }
+
+
+
+
 .home-button{
     width: 8rem;
     height: 2rem;
@@ -463,13 +463,9 @@ footer p{
         box-shadow: 1px 1px 1px #888;
         border-radius: 5px;
         background-image: linear-gradient(#edf053, #cbe00d);
-    }    
-    
+    }       
     
     /*******************Cart Section*******************/
-  
-    /*Left off here - #cart-container */
-
 
     #cart-section{
         margin: 10px 0;
@@ -491,10 +487,9 @@ footer p{
         margin-left: 16px;
         font-weight: 550;
     }
-    .home-button{
-        width: 8rem;
-        height: 2rem;
-    }
+   
+    /*Left off here - .home-button */
+
     .your-order-h3{
         font-size: 1rem;
     }
