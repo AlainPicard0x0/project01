@@ -225,10 +225,6 @@ footer p{
     height: 2rem;
     display: inline-block;
 }
-
-
-
-
 .cart-num p{
     text-align: center;
     margin-top: .3rem;
@@ -254,6 +250,10 @@ footer p{
 
 
 /*******************Cart Section*******************/
+
+
+
+
 #cart-container{
     display: grid;
     margin: 10px auto 45px auto;
@@ -455,12 +455,7 @@ footer p{
         color: #fff;
         border: none;
         border-radius: 5px;
-    }
-    
-    /*Left off here - .cart-num p */
-
-    
-    
+    }    
     #cart-button{
         width: 6rem;
         height: 1.7rem;
@@ -468,14 +463,14 @@ footer p{
         box-shadow: 1px 1px 1px #888;
         border-radius: 5px;
         background-image: linear-gradient(#edf053, #cbe00d);
-    }
-    
+    }    
     
     
     /*******************Cart Section*******************/
-    #cart-container{
-        min-height: 275px;
-    }
+  
+    /*Left off here - #cart-container */
+
+
     #cart-section{
         margin: 10px 0;
     }    
