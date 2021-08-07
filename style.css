@@ -311,10 +311,6 @@ footer p{
 .details{
     grid-area: 2 / 3 / 5 / 8;
 }
-
-
-
-
 .home-button{
     width: 8rem;
     height: 2rem;
@@ -325,7 +321,6 @@ footer p{
 .shopping-cart-h2{
     margin: 0 30px;
 }
-
 .checkout{
     min-height: 270px;
     width: 250px;
@@ -398,6 +393,7 @@ footer p{
         font-size: 0.7rem;
         background-color: #edf053;
     }
+
     .container{
         width: 95%;
     }
@@ -416,23 +412,28 @@ footer p{
         background: url("./assets/iphone-6.jpg") no-repeat 0 -120px;
         background-size: cover;
     }
+
     #showcase-text{
         font-size: 1.4rem;
         float: left;
         margin-top: 120px;
     }
+
     #case-display{
         margin: 50px;
         height: 35vh;
     }
+
     #case-display img{
         width: 15vw;
         height: 25vh;
     }
+
     #mid-page h3{
         margin-top: 30px;
         font-size: 1.0rem;
     }
+
     #mid-page p{
         margin: 10px;
         font-size: 0.8rem;
@@ -444,10 +445,12 @@ footer p{
         margin: 25px;
         padding: 15px;
     }
+
     #selection-container img{
         width: 18vw;
         height: 26vh;
     }
+
     .add-to-cart{
         width: 7rem;
         height: 1.8rem;
@@ -455,7 +458,8 @@ footer p{
         color: #fff;
         border: none;
         border-radius: 5px;
-    }    
+    }  
+
     #cart-button{
         width: 6rem;
         height: 1.7rem;
@@ -469,26 +473,29 @@ footer p{
 
     #cart-section{
         margin: 10px 0;
-    }    
+    }  
+
     #cart-section h2{
         margin: 10px;
     }
+
     .cart-div .title{
         font-size: 1.2rem;
     }
+
     #checkout-btn:hover{
         cursor: pointer;
     }
+
     #empty-cart, .remove-item{
         font-size: 0.8rem;
     }
+
     #price{
         font-size: 1.0rem;
         margin-left: 16px;
         font-weight: 550;
     }
-   
-    /*Left off here - .home-button */
 
     .your-order-h3{
         font-size: 1rem;
