@@ -503,3 +503,9 @@ footer p{
     
 }
 
+@media(max-width: 1440px) {
+    body {
+        background-color: blue;
+    }
+}
+
