@@ -616,7 +616,7 @@ footer p{
     }
 }
 
-@media (max-width: 716px) {
+@media (max-width: 414px) {
     body{
         font-size: 0.7rem;
         background-color: #f06b53;
