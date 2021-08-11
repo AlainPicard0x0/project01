@@ -616,40 +616,418 @@ footer p{
     }
 }
 
+
+/**************************/
+
+
 @media (max-width: 414px) {
     body{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
+        background-color: #f06b53;
+    }
+    .container{
+        width: 100%;
+    }
+    .flex-container-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .flex-container-two{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .grid-container{
+        display: grid;
+        margin: 10px auto;
+        width: 75vw;
+        height: 275px;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+    header{
+        /* min-height: 7vh; */
+        background-color: #fff;
+        border-bottom: solid 1px #fff;
+    }
+    .index-header{
+        min-height: 6rem;
+    }
+    #branding{
+        margin: 5px;
+    }
+    .navbar{
+        position: relative;
+    }
+    .dropdown{
+        background-color: none;
+        width: 12vw;
+    }
+    .dropdown-button{
+        border: none;
+        outline: none;
+        font-size: 1.0rem;
+        color: rgb(231,63,2);
+        padding: 14px;
+        background-color: #fff;
+    }
+    .dropdown-button:hover{
+        cursor: pointer;
+    }
+    .dropdown-content{
+        display: none;
+        min-width: 160px;
+        background-color: rgba(245, 245, 245, 0.7);
+        border: 1px solid #333;
+    }
+    .show{
+        display: block;
+    }
+    .dropdown-content a{
+        float: none;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        padding: 3px;
+        font-size: 1.0rem;
+    }
+    #showcase{
+        height: 70vh;
+        background: url("./assets/iphone-6.jpg") no-repeat 0 -150px;
+        background-size: cover;
+        background-color: #f4f4f4;
+    }
+    #showcase-text{
+        font-size: 2rem;
+        float: left;
+        margin-top: 150px;
+        color: red;
+        text-shadow: 1px 1px 1px #000;
+    }
+    #showcase-main{
+        color:#edf053;
+        font-size: 3rem;
+    }
+    .box{
+        margin-bottom: 25px;
+    }
+    #case-display{
+        margin: 80px;
+        height: 40vh;
+    }
+    #case-display img{
+        width: 20vw;
+        height: 30vh;
+    }
+    #mid-page{
+        background-color: #f4f4f4;
+        height: 21vh;
+        border-bottom: solid 1px #fff;
+        margin-top: 100px;
+    }
+    #mid-page h3{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    #mid-page p{
+        margin: 10px;
+        font-size: 1.0rem;
+    }
+    #bottom-showcase{
+        background: url("./assets/iphone.jpeg") no-repeat 0 -140px;
+        background-size: cover;
+        height: 40vh;
+    }
+    footer{
+        background-color: #111;
+        border-top: solid 1px #f4f4f4;
+        color: rgb(231,63,2);
+        position: relative;
+    }
+    footer p{
+        margin: 15px 80px 10px 80px;
+    }
+    #footer-border{
+        border: solid 1px #fff;
+        height: 2px;
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #newsletter{
+        margin: 100px 10px;
+    }
+    #fname,#lname{
+        width: 13vw;
+        height: 6vh;
+        padding: 2px
+    }
+    #email{
+        width: 26vw;
+        height: 6vh;
+        display: block;
+    }
+    #newsletter-button{
+        width: 26vw;
+        height: 6vh;
+        display: block;
+        background-color: #000;
+        color: rgb(231,63,2);
+    }
+    .models li{
+        list-style: none;
+        text-align: left;
+        padding: 6px;
+    }
+    /*selection.html page*/
+    .flex-display{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #branding a{
+        text-decoration: none;
+    }
+    #selection-container{
+        margin: 10px;
+    }
+    #selection-container img{
+        width: 20vw;
+        height: 30vh;
+    }
+    .add-to-cart{
+        width: 8rem;
+        height: 2rem;
+        background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    .add-to-cart:hover{
+        cursor: pointer;
+    }
+    .cart-icon{
+        margin: 0 5px 0 0; 
+        display: inline-block;   
+    }
+    .cart-num{
+        color:#fff;
+        text-align: center;
+        font-weight: bold;
+        background-image: linear-gradient(#53b6f0, #0d93e0);
+        /* background-color:rgb(182, 51, 3); */
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+    }
+    .cart-num p{
+        text-align: center;
+        margin-top: .3rem;
+    }
+    .go-to-cart{
+        display: inline-block;
+    }
+    .go-to-cart:hover{
+        color:rgb(182, 51, 3);
+        cursor: pointer;
+    }
+    #cart-button{
+        width: 7rem;
+        height: 1.8rem;
+        border: 1px solid #aaa;
+        box-shadow: 1px 1px 1px #888;
+        border-radius: 5px;
+        background-image: linear-gradient(#edf053, #cbe00d);
+    }
+    #cart-button:hover{
+        cursor: pointer;
+    }
+    
+    /*******************Cart Section*******************/
+    
+    #cart-container{
+        display: grid;
+        margin: 10px auto 45px auto;
+        width: 95vw;
+        min-height: 275px;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+    #cart-section{
+        grid-area: 1 / 1 / 8 / 11;
+        margin: 20px 0;
+    }
+    .checkout{
+        grid-area: 1 / 11 / 3 / 13; 
+    }
+    #cart-header{
+        display: flex;
+        justify-content: left;
+        margin-left: 110px;
+    }
+    #cart-section h2{
+        margin: 10px;
+    }
+    .cart-div{
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .cart-div .title{
+        font-size: 2rem;
+    }
+    #empty-cart, .remove-item{
+        background-image: linear-gradient(#53b6f0, #0d93e0);
+        width: 130px;
+        height: 45px;
+        color: #fff;
+        border: none;
+        border-radius: 5%;
+        margin: 10px;
+        font-size: 1rem;
+    }
+    .remove-item:hover{
+        cursor: pointer;
+    }
+    .title{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .cart-img{
+        grid-area: 2 / 1 / 5 / 3;
+    }
+    #price{
+        grid-area: 7 / 1 / 8 / 3;
+        font-size: 1.5rem;
+        margin-left: 30px;
+    }
+    .remove-item{
+        grid-area: 5 / 10 / 7 / 12;
+    }
+    .details{
+        grid-area: 2 / 3 / 5 / 8;
+    }
+    .home-button{
+        width: 8rem;
+        height: 2rem;
+        background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+        color: #fff;
+        border: none;
+    }
+    .shopping-cart-h2{
+        margin: 0 30px;
+    }
+    .checkout{
+        min-height: 270px;
+        width: 250px;
+        border: solid 1px #000;
+        margin: 10px 27px;
+        text-align: center;
+    }
+    .checkout h3{
+        text-align: center;
+    }
+    .your-order-h3{
+        font-size: 1.2rem;
+        color: rgb(60, 60, 60);
+        /* border: solid 2px #333; */
+        background-color: #f4f4f4;
+    }
+    .checkout-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        min-height: 100px;
+        margin: 5px auto;
+        font-size: 1.25rem;
+    }
+    #checkout-btn{
+        width: 120px;
+        height: 32px;
+        background-image: linear-gradient(rgb(26, 207, 2), rgb(2, 129, 46));
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .continue-shopping{
+        background-image: linear-gradient(#edf053, #cbe00d);
+        padding: 5px;
+    }
+    .continue-shopping h3{
+        color: #777;
+    }
+    .continue-shopping a{
+        text-decoration: none;
+    }
+    .continue-shopping a:hover{
+        cursor: pointer;
+    }
+    .cart-items{
+        padding: 5px;
+    }
+    .item-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .item-img-container{
+        grid-area: 1 / 1 / 3 / 3;
+    }
+    .item-title-container{
+        grid-area: 1 / 3 / 2 / 5;
+    }
+    .item-price-container{
+        grid-area: 2 / 3 / 3 / 5;
+    } 
+    #cart-mid-page{
+        margin: 20px auto;
+    }
+
+    /***************************/
+
+
+    body{
+        font-size: 0.5rem;
         background-color: #f06b53;
     }
 
     .container{
-        width: 95%;
+        width: 100%;
     }
     
     .grid-container{
         margin: 5px auto;
-        width: 80vw;
+        width: 100vw;
     }
     
     #branding{
-        margin: 25px;
+        margin: 5px;
     }     
     
     #showcase{
-        height: 75vh;
-        background: url("./assets/iphone-6.jpg") no-repeat 0 -120px;
+        height: 37rem;
+        background: url("./assets/iphone-6.jpg") no-repeat -385px -80px;
         background-size: cover;
     }
 
     #showcase-text{
-        font-size: 1.4rem;
+        font-size: 1.0rem;
         float: left;
         margin-top: 120px;
     }
 
     #case-display{
         margin: 50px;
-        height: 35vh;
+        height: 37rem;
     }
 
     #case-display img{
