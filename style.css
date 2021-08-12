@@ -423,10 +423,6 @@ footer p{
         height: 35vh;
     }
 
-    #case-display img{
-        width: 15vw;
-        height: 25vh;
-    }
 
     #mid-page h3{
         margin-top: 30px;
@@ -536,11 +532,6 @@ footer p{
     #case-display{
         margin: 50px;
         height: 35vh;
-    }
-
-    #case-display img{
-        width: 15vw;
-        height: 25vh;
     }
 
     #mid-page h3{
@@ -717,11 +708,11 @@ footer p{
         margin-bottom: 25px;
     }
     #case-display{
-        margin: 80px;
-        height: 40vh;
+        margin: 5px;
+        height: 400px;
     }
     #case-display img{
-        width: 20vw;
+        width: 75vw;
         height: 30vh;
     }
     #mid-page{
@@ -1027,12 +1018,7 @@ footer p{
 
     #case-display{
         margin: 50px;
-        height: 37rem;
-    }
-
-    #case-display img{
-        width: 15vw;
-        height: 25vh;
+        height: 82rem;
     }
 
     #mid-page h3{
