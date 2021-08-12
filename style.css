@@ -730,7 +730,7 @@ footer p{
         font-size: 1.0rem;
     }
     #bottom-showcase{
-        background: url("./assets/iphone.jpeg") no-repeat 0 -140px;
+        background: url("./assets/iphone.jpeg") no-repeat 0 0;
         background-size: cover;
         height: 40vh;
     }
