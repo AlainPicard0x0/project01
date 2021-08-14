@@ -623,6 +623,11 @@ footer p{
     .container{
         width: 100%;
     }
+    .flex-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
     .flex-container-grid{
         display: flex;
         flex-direction: column;
