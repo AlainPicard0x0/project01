@@ -33,6 +33,12 @@ body{
     justify-content: space-between;
     align-items: baseline;
 }
+.flex-container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
 .grid-container{
     display: grid;
     margin: 10px auto;
