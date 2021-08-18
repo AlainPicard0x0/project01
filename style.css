@@ -794,6 +794,9 @@ footer p{
         text-align: left;
         padding: 6px;
     }
+    .models, .social-media {
+        display: none;
+    }
     /*selection.html page*/
     .flex-display{
         display: flex;
