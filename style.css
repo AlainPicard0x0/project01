@@ -169,6 +169,9 @@ footer p{
 #newsletter{
     margin: 100px 10px;
 }
+#mobile-newsletter{
+    display: none;
+}
 #fname,#lname{
     width: 13vw;
     height: 6vh;
@@ -770,7 +773,11 @@ footer p{
         transform: translate(-50%);
     }
     #newsletter{
-        margin: 100px 10px;
+        display: none;
+    }
+    #mobile-newsletter{
+        display: block;
+        margin: 5px;
     }
     #fname,#lname{
         width: 13vw;
