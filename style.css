@@ -56,6 +56,10 @@ header{
 .index-header{
     height: 9vh;
 }
+.index-header-mobile{
+    min-height: 6rem;
+    display: none;
+}
 #branding{
     margin: 30px;
 }
@@ -664,7 +668,12 @@ footer p{
         border-bottom: solid 1px #fff;
     }
     .index-header{
+        /* min-height: 6rem; */
+        display: none;
+    }
+    .index-header-mobile{
         min-height: 6rem;
+        display: block;
     }
     #branding{
         margin: 5px;
