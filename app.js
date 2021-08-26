@@ -110,6 +110,12 @@ function runApp() {
             continueShopping(continueShoppingBtn);
         })
     }
+
+    //Get mobile navigation element
+    const mobileNav = document.getElementsByClassName("icon")[0];
+    mobileNav.addEventListener("click", () => {
+        console.log("Hello Nav");
+    })
 }
 
 //Get the value of the last element added to the cart
@@ -247,6 +253,16 @@ function completePurchase() {
         alert("Thank you for your purchase");
     }, 0);
     
+}
+
+//Add functionality to modile menu
+function mobileMenu() {
+    
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 
 
