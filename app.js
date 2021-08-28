@@ -114,7 +114,7 @@ function runApp() {
     //Get mobile navigation element
     const mobileNav = document.getElementsByClassName("icon")[0];
     mobileNav.addEventListener("click", () => {
-        console.log("Hello Nav");
+        mobileMenu();
     })
 }
 
@@ -257,12 +257,12 @@ function completePurchase() {
 
 //Add functionality to modile menu
 function mobileMenu() {
-    
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+    const myLinks = document.getElementById("myLinks"); 
+    if (myLinks.style.display === "block") {
+        myLinks.style.display = "none";
+    } else {
+        myLinks.style.display = "block";
+    }
 }
 
 
