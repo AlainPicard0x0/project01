@@ -59,7 +59,7 @@ header{
 
 /* Modile nav */
 .index-header-mobile{
-    min-height: 6rem;
+    min-height: 3rem;
     display: none;
 }
 
@@ -719,7 +719,7 @@ footer p{
         display: none;
     }
     .index-header-mobile{
-        min-height: 6rem;
+        min-height: 3rem;
         display: block;
     }
     #branding{
@@ -763,7 +763,7 @@ footer p{
     }
     #showcase{
         height: 70vh;
-        background: url("./assets/iphone-6.jpg") no-repeat 0 -150px;
+        background: url("./assets/iphone-6.jpg") no-repeat -445px 0;
         background-size: cover;
         background-color: #f4f4f4;
     }
@@ -1087,12 +1087,6 @@ footer p{
     #branding{
         margin: 5px;
     }     
-    
-    #showcase{
-        height: 37rem;
-        background: url("./assets/iphone-6.jpg") no-repeat -385px -80px;
-        background-size: cover;
-    }
 
     #showcase-text{
         font-size: 1.0rem;
