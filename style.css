@@ -763,7 +763,8 @@ footer p{
     }
     #showcase{
         height: 70vh;
-        background: url("./assets/iphone-6.jpg") no-repeat -445px 0;
+        background: url("./assets/iphone-6.jpg") no-repeat;
+        background-position: center;
         background-size: cover;
         background-color: #f4f4f4;
     }
