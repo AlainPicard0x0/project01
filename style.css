@@ -770,7 +770,7 @@ footer p{
     }
     #showcase-text{
         font-size: 2rem;
-        float: left;
+        float: none;
         margin-top: 150px;
         color: red;
         text-shadow: 1px 1px 1px #000;
@@ -1083,12 +1083,6 @@ footer p{
     #branding{
         margin: 5px;
     }     
-
-    #showcase-text{
-        font-size: 1.0rem;
-        float: left;
-        margin-top: 120px;
-    }
 
     #case-display{
         margin: 50px;
