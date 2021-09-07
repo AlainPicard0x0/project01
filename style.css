@@ -783,8 +783,8 @@ footer p{
         margin-bottom: 25px;
     }
     #case-display{
-        margin: 5px;
-        height: 400px;
+        margin: 50px;
+        min-height: 70rem;
     }
     #case-display img{
         width: 75vw;
@@ -794,7 +794,7 @@ footer p{
         background-color: #f4f4f4;
         height: 21vh;
         border-bottom: solid 1px #fff;
-        margin-top: 100px;
+        margin-top: 150px;
     }
     #mid-page h3{
         margin-top: 30px;
@@ -1084,10 +1084,7 @@ footer p{
         margin: 5px;
     }     
 
-    #case-display{
-        margin: 50px;
-        height: 82rem;
-    }
+    
 
     #mid-page h3{
         margin-top: 30px;
