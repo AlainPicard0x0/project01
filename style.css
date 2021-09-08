@@ -852,6 +852,7 @@ footer p{
         display: block;
         background-color: #000;
         color: rgb(231,63,2);
+        border-radius: 5px;
     }
     .models li{
         list-style: none;
