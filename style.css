@@ -817,6 +817,7 @@ footer p{
         border-top: solid 1px #f4f4f4;
         color: rgb(231,63,2);
         position: relative;
+        padding: 15px;
     }
     footer p{
         margin: 35px 5px 5px 5px;
