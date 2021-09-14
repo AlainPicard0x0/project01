@@ -226,12 +226,13 @@ footer p{
 #fname,#lname{
     width: 13vw;
     height: 6vh;
-    padding: 2px
+    padding: 8px
 }
 #email{
     width: 26vw;
     height: 6vh;
     display: block;
+    padding: 8px;
 }
 #newsletter-button{
     width: 26vw;
