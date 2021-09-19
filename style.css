@@ -312,6 +312,13 @@ footer p{
 #cart-button:hover{
     cursor: pointer;
 }
+#cart-span{
+    /* margin-left: 60px; */
+}
+.cart-num-span{
+    display: flex;
+    justify-content: center;
+}
 
 /*******************Cart Section*******************/
 
@@ -928,6 +935,24 @@ footer p{
     }
     #cart-button:hover{
         cursor: pointer;
+    } 
+    .cart-num-mobile{
+        /* display: flex;
+        justify-content: space-between; */
+        color:#fff;
+        text-align: center;
+        font-weight: bold;
+        background-image: linear-gradient(#53b6f0, #0d93e0);
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }   
+    #cart-text-mobile{
+        float: right;
+        color: #fff;
+        font-size: 2rem;
     }
     
     /*******************Cart Section*******************/
