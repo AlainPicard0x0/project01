@@ -936,6 +936,14 @@ footer p{
     #cart-button:hover{
         cursor: pointer;
     } 
+    #cart-text-mobile{
+        color: #fff;
+        font-size: 1.3rem;
+        display: inline-block;
+        margin-left: 16px;
+        position: relative;
+        top: 7px;
+    }
     .cart-num-mobile{
         /* display: flex;
         justify-content: space-between; */
@@ -948,12 +956,9 @@ footer p{
         height: 2rem;
         font-size: 1rem;
         margin-left: 1rem;
-    }   
-    #cart-text-mobile{
-        float: right;
-        color: #fff;
-        font-size: 2rem;
-    }
+        margin-bottom: 10px;
+        display: inline-block;
+    }       
     
     /*******************Cart Section*******************/
     
