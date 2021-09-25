@@ -93,6 +93,14 @@ function runApp() {
             location.href = "./cart.html";
         })
     }
+
+    //for mobile nav
+    let goToCart = document.getElementById("cart-text-mobile");
+    if(goToCart) {
+        goToCart.addEventListener("click", () => {
+            location.href = "./cart.html";
+        })
+    }
    
     let removeItemBtn = document.getElementsByClassName("remove-item");
     for(let i = 0; i < removeItemBtn.length; i++) {

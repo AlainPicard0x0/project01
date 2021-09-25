@@ -312,9 +312,6 @@ footer p{
 #cart-button:hover{
     cursor: pointer;
 }
-#cart-span{
-    /* margin-left: 60px; */
-}
 .cart-num-span{
     display: flex;
     justify-content: center;
