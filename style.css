@@ -719,7 +719,7 @@ footer p{
         background-color: #fff;
         border-bottom: solid 1px #fff;
     }
-    .index-header{
+    .index-header, #cart-header{
         /* min-height: 6rem; */
         display: none;
     }
@@ -974,11 +974,6 @@ footer p{
     }
     .checkout{
         grid-area: 1 / 11 / 3 / 13; 
-    }
-    #cart-header{
-        display: flex;
-        justify-content: left;
-        margin-left: 110px;
     }
     #cart-section h2{
         margin: 10px;
