@@ -797,20 +797,20 @@ footer p{
     }
     #mid-page{
         background-color: #f4f4f4;
-        height: 21vh;
+        min-height: 21vh;
         border-bottom: solid 1px #fff;
         margin-top: 150px;
     }
     #mid-page h3{
-        margin-top: 30px;
-        font-size: 1.5rem;
+        margin-top: 15px;
+        font-size: 1.0rem;
     }
     .mid-page-paragraph{
         width: 95vw;
     }
     #mid-page p{
         margin: 10px;
-        font-size: 1.0rem;
+        font-size: 0.8rem;
     }
     #bottom-showcase{
         background: url("./assets/iphone.jpeg") no-repeat 0 0;
@@ -1110,15 +1110,7 @@ footer p{
 
     
 
-    #mid-page h3{
-        margin-top: 30px;
-        font-size: 1.0rem;
-    }
-
-    #mid-page p{
-        margin: 10px;
-        font-size: 0.8rem;
-    }  
+    
     
     /*selection.html page*/
        
