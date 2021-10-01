@@ -240,6 +240,7 @@ footer p{
     display: block;
     background-color: #000;
     color: rgb(231,63,2);
+    margin-top: 1.5px;
 }
 .models li{
     list-style: none;
