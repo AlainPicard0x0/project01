@@ -171,7 +171,7 @@ header{
 }
 #case-display{
     margin: 80px;
-    height: 40vh;
+    min-height: 40vh;
 }
 #case-display img{
     width: 20vw;
@@ -181,7 +181,7 @@ header{
     background-color: #f4f4f4;
     height: 21vh;
     border-bottom: solid 1px #fff;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 #mid-page h3{
     margin-top: 30px;
@@ -490,7 +490,7 @@ footer p{
 
     #case-display{
         margin: 50px;
-        height: 35vh;
+        min-height: 35vh;
     }
 
 
@@ -601,7 +601,7 @@ footer p{
 
     #case-display{
         margin: 50px;
-        height: 35vh;
+        min-height: 35vh;
     }
 
     #mid-page h3{
@@ -790,7 +790,7 @@ footer p{
     }
     #case-display{
         margin: 50px;
-        min-height: 70rem;
+        min-height: 50rem;
     }
     #case-display img{
         width: 75vw;
@@ -800,7 +800,6 @@ footer p{
         background-color: #f4f4f4;
         min-height: 21vh;
         border-bottom: solid 1px #fff;
-        margin-top: 150px;
     }
     #mid-page h3{
         margin-top: 15px;
