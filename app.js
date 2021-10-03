@@ -7,6 +7,8 @@ else {
 
 //Shows the number of items in the cart
 const itemsInCart = document.getElementsByClassName("items-in-cart")[0];
+//Shows the number of items in the cart for mobile nav
+const itemsInCartMobile = document.getElementsByClassName("items-in-cart-mobile")[0];
 
 //Array to store items added to cart
 let cartList;
@@ -23,7 +25,10 @@ if(data) {
     id = cartList.length;
     console.log(cartList);
     if(itemsInCart) {
-        itemsInCart.innerText = numberOfItems;
+        itemsInCart.innerText = numberOfItems;        
+    }
+    if(itemsInCartMobile) {
+        itemsInCartMobile.innerText = numberOfItems;
     }
 }
 else {
@@ -173,7 +178,9 @@ function addToCart(currentAddButton) {
         id++;
         console.log(cartList);
         numberOfItems = cartList.length;
-        itemsInCart.innerText = numberOfItems;
+        itemsInCart.innerText = numberOfItems;        
+        itemsInCartMobile.innerText = numberOfItems;
+     
 }
 
 //Need to display items in cart
