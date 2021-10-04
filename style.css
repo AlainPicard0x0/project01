@@ -969,8 +969,7 @@ footer p{
         grid-template-rows: repeat(7, 1fr);
     }
     #cart-section{
-        grid-area: 1 / 1 / 8 / 11;
-        margin: 20px 0;
+       display: none;
     }
     .checkout{
         grid-area: 1 / 11 / 3 / 13; 
