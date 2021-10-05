@@ -43,7 +43,7 @@ body{
     display: grid;
     margin: 10px auto;
     width: 75vw;
-    height: 275px;
+    min-height: 175px;
     justify-content: center;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -322,13 +322,14 @@ footer p{
 
 #cart-container{
     display: grid;
-    margin: 10px auto 45px auto;
+    margin: 10px auto 10px auto;
     width: 95vw;
-    min-height: 275px;
+    min-height: 100px;
     justify-content: center;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
+/* Changed grid-template-rows: from repeat(7, 1fr) to repeat(3, 1fr); */
 #cart-section{
     grid-area: 1 / 1 / 8 / 11;
     margin: 20px 0;
@@ -392,7 +393,7 @@ footer p{
     margin: 0 30px;
 }
 .checkout{
-    min-height: 270px;
+    min-height: 240px;
     width: 250px;
     border: solid 1px #000;
     margin: 10px 27px;
@@ -404,7 +405,6 @@ footer p{
 .your-order-h3{
     font-size: 1.2rem;
     color: rgb(60, 60, 60);
-    /* border: solid 2px #333; */
     background-color: #f4f4f4;
 }
 .checkout-container{
@@ -458,7 +458,7 @@ footer p{
     margin: 20px auto;
 }
 
-@media(max-width: 1680px) {
+/* @media(max-width: 1680px) {
     body{
         font-size: 0.7rem;
     }
@@ -502,11 +502,11 @@ footer p{
     #mid-page p{
         margin: 10px;
         font-size: 0.8rem;
-    }  
+    }   */
     
     /*selection.html page*/
        
-    #selection-container{
+    /* #selection-container{
         margin: 25px;
         padding: 15px;
     }
@@ -532,11 +532,11 @@ footer p{
         box-shadow: 1px 1px 1px #888;
         border-radius: 5px;
         background-image: linear-gradient(#edf053, #cbe00d);
-    }       
+    }        */
     
     /*******************Cart Section*******************/
 
-    #cart-section{
+    /* #cart-section{
         margin: 10px 0;
     }  
 
@@ -566,9 +566,9 @@ footer p{
         font-size: 1rem;
     }
     
-}
+} */
 
-@media(max-width: 1440px) {
+/* @media(max-width: 1440px) {
     body{
         font-size: 0.7rem;
         background-color: #edf053;
@@ -612,11 +612,11 @@ footer p{
     #mid-page p{
         margin: 10px;
         font-size: 0.8rem;
-    }  
+    }   */
     
     /*selection.html page*/
        
-    #selection-container{
+    /* #selection-container{
         margin: 25px;
         padding: 15px;
     }
@@ -642,11 +642,11 @@ footer p{
         box-shadow: 1px 1px 1px #888;
         border-radius: 5px;
         background-image: linear-gradient(#edf053, #cbe00d);
-    }       
+    }        */
     
     /*******************Cart Section*******************/
 
-    #cart-section{
+    /* #cart-section{
         margin: 10px 0;
     }  
 
@@ -675,7 +675,7 @@ footer p{
     .your-order-h3{
         font-size: 1rem;
     }
-}
+} */
 
 
 /**************************/
