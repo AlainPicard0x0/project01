@@ -39,14 +39,15 @@ body{
     justify-content: space-around;
     align-items: baseline;
 }
+/* .grid-container class is on shopping cart items generated in app.js */
 .grid-container{
     display: grid;
     margin: 10px auto;
     width: 75vw;
-    min-height: 175px;
+    min-height: 75px;
     justify-content: center;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 header{
     /* min-height: 7vh; */
