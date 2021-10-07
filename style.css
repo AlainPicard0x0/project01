@@ -459,7 +459,7 @@ footer p{
     margin: 20px auto;
 }
 
-/* @media(max-width: 1680px) {
+@media(max-width: 1680px) {
     body{
         font-size: 0.7rem;
     }
@@ -503,11 +503,11 @@ footer p{
     #mid-page p{
         margin: 10px;
         font-size: 0.8rem;
-    }   */
+    }  
     
     /*selection.html page*/
        
-    /* #selection-container{
+    #selection-container{
         margin: 25px;
         padding: 15px;
     }
@@ -533,11 +533,11 @@ footer p{
         box-shadow: 1px 1px 1px #888;
         border-radius: 5px;
         background-image: linear-gradient(#edf053, #cbe00d);
-    }        */
+    }       
     
     /*******************Cart Section*******************/
 
-    /* #cart-section{
+    #cart-section{
         margin: 10px 0;
     }  
 
@@ -567,9 +567,9 @@ footer p{
         font-size: 1rem;
     }
     
-} */
+}
 
-/* @media(max-width: 1440px) {
+@media(max-width: 1440px) {
     body{
         font-size: 0.7rem;
         background-color: #edf053;
@@ -613,11 +613,11 @@ footer p{
     #mid-page p{
         margin: 10px;
         font-size: 0.8rem;
-    }   */
+    }  
     
     /*selection.html page*/
        
-    /* #selection-container{
+    #selection-container{
         margin: 25px;
         padding: 15px;
     }
@@ -643,11 +643,11 @@ footer p{
         box-shadow: 1px 1px 1px #888;
         border-radius: 5px;
         background-image: linear-gradient(#edf053, #cbe00d);
-    }        */
+    }       
     
     /*******************Cart Section*******************/
 
-    /* #cart-section{
+    #cart-section{
         margin: 10px 0;
     }  
 
@@ -676,7 +676,7 @@ footer p{
     .your-order-h3{
         font-size: 1rem;
     }
-} */
+}
 
 
 /**************************/
