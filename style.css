@@ -328,13 +328,12 @@ footer p{
     min-height: 25px;
     justify-content: center;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
 }
-/* Changed grid-template-rows: from repeat(7, 1fr) to repeat(3, 1fr); */
-/* #cart-section{
+#cart-section{
     grid-area: 1 / 1 / 8 / 11;
     margin: 20px 0;
-} */
+}
 .checkout{
     grid-area: 1 / 11 / 3 / 13; 
 }
