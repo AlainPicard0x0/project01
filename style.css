@@ -963,16 +963,7 @@ footer p{
     /*******************Cart Section*******************/
     
     #cart-container{
-        display: none;
-        /* display: grid;
-        margin: 10px auto 45px auto;
-        width: 95vw;
-        min-height: 275px;
-        justify-content: center;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 1fr); */
-    }
-    #mobile-cart-container{
+        /* display: none; */
         display: grid;
         margin: 10px auto 45px auto;
         width: 95vw;
@@ -981,6 +972,15 @@ footer p{
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(7, 1fr);
     }
+    /* #mobile-cart-container{
+        display: grid;
+        margin: 10px auto 45px auto;
+        width: 95vw;
+        min-height: 275px;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    } */
     #cart-section{
        display: none;
     }
