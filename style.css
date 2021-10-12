@@ -965,9 +965,9 @@ footer p{
     #cart-container{
         /* display: none; */
         display: grid;
-        margin: 10px auto 45px auto;
+        margin: 5px auto 5px auto;
         width: 95vw;
-        min-height: 275px;
+        min-height: 100px;
         justify-content: center;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(7, 1fr);
@@ -985,7 +985,7 @@ footer p{
        display: none;
     }
     .checkout{
-        grid-area: 1 / 11 / 3 / 13; 
+        grid-area: 1 / 11 / 8 / 13; 
     }
     #cart-section h2{
         margin: 10px;
