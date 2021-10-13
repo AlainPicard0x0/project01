@@ -985,7 +985,7 @@ footer p{
        display: none;
     }
     .checkout{
-        grid-area: 1 / 11 / 8 / 13; 
+        grid-area: 1 / 1 / 8 / 13; 
     }
     #cart-section h2{
         margin: 10px;
