@@ -583,7 +583,7 @@ footer p{
     
     .grid-container{
         margin: 5px auto;
-        width: 80vw;
+        max-width: 80vw;
     }
     
     #branding{
@@ -648,10 +648,39 @@ footer p{
     }       
     
     /*******************Cart Section*******************/
+    #cart-container{
+        display: grid;
+        margin: 5px auto 5px auto;
+        width: 95vw;
+        min-height: 100px;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    /* #cart-section{
+        display: grid;
+        margin: 10px 0;
+        width: 95vw;
+        min-height: 275px;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    } */
 
     #cart-section{
-        margin: 10px 0;
-    }  
+        grid-area: 1 / 1 / 3 / 9;
+    }
+
+    .checkout{
+        grid-area: 1 / 12 / 6 / 13; 
+    }
+
+    .cart-div{
+        width: 70vw;
+        height: 245px;
+        /* grid-area: 1 / 1 / 8 / 11; */
+    }
 
     #cart-section h2{
         margin: 10px;
