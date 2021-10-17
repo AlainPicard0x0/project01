@@ -668,12 +668,12 @@ footer p{
         grid-template-rows: repeat(7, 1fr);
     } */
 
-    #cart-section{
-        grid-area: 1 / 1 / 3 / 9;
+    .checkout{
+        grid-area: 1 / 12 / 5 / 13; 
     }
 
-    .checkout{
-        grid-area: 1 / 12 / 6 / 13; 
+    #cart-container{
+        grid-area: 1 / 12 / 2 / 13;
     }
 
     .cart-div{
