@@ -669,7 +669,7 @@ footer p{
     } */
 
     .checkout{
-        grid-area: 1 / 12 / 5 / 13; 
+        grid-area: 1 / 12 / 3 / 13; 
     }
 
     #cart-container{
