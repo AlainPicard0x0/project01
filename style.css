@@ -328,17 +328,17 @@ footer p{
     min-height: 25px;
     justify-content: center;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 #mobile-cart-container{
     display: none;
 }
 #cart-section{
-    grid-area: 1 / 1 / 8 / 11;
+    grid-area: 1 / 1 / 4 / 11;
     margin: 20px 0;
 }
 .checkout{
-    grid-area: 1 / 11 / 3 / 13; 
+    grid-area: 1 / 11 / 2 / 13; 
 }
 #cart-header{
     display: flex;
@@ -466,6 +466,7 @@ footer p{
 @media(max-width: 1680px) {
     body{
         font-size: 0.7rem;
+        background-color: aqua;
     }
 
     .container{
