@@ -655,10 +655,10 @@ footer p{
         display: grid;
         margin: 5px auto 5px auto;
         width: 95vw;
-        min-height: 100px;
+        min-height: 25px;
         justify-content: center;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     /* #cart-section{
