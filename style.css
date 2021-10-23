@@ -658,7 +658,7 @@ footer p{
         min-height: 25px;
         justify-content: center;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
     /* #cart-section{
