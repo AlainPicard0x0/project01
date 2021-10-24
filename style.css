@@ -328,6 +328,15 @@ footer p{
     margin: auto;
     justify-content: center;
 }
+#cart-container{
+    display: grid;
+    margin: 10px auto;
+    min-width: 70vw;
+    min-height: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
 
 /********************************************/
 
