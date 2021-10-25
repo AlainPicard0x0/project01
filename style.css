@@ -337,6 +337,15 @@ footer p{
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+.checkout{
+    display: grid;
+    margin: 10px auto;
+    min-width: 20vw;
+    min-height: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
 
 /********************************************/
 
