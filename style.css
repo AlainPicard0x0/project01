@@ -346,6 +346,9 @@ footer p{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+.details{
+    grid-area: 1 / 4 / 4 / 7;
+}
 
 /********************************************/
 
