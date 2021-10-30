@@ -346,6 +346,9 @@ footer p{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+.cart-img{
+    grid-area: 2 / 1 / 4 / 3;
+}
 .details{
     grid-area: 1 / 3 / 4 / 10;
 }
