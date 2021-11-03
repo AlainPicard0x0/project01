@@ -39,16 +39,6 @@ body{
     justify-content: space-around;
     align-items: baseline;
 }
-/* .grid-container class is on shopping cart items generated in app.js */
-.grid-container{
-    display: grid;
-    margin: 10px auto;
-    width: 75vw;
-    min-height: 25px;
-    justify-content: center;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-}
 header{
     /* min-height: 7vh; */
     background-color: #fff;
@@ -327,6 +317,16 @@ footer p{
     display: flex;
     margin: auto;
     justify-content: center;
+}
+/* .grid-container class is on shopping cart items generated in app.js */
+.grid-container{
+    display: grid;
+    margin: 10px auto;
+    width: 75vw;
+    min-height: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 #cart-container{
     display: grid;
