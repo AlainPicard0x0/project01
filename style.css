@@ -341,7 +341,6 @@ footer p{
     margin: 10px auto;
     min-width: 20vw;
     min-height: 25px;
-    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
@@ -356,6 +355,9 @@ footer p{
 }
 .price{
     grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .remove-item{
     grid-area: 3 / 8 / 4 / 9;
