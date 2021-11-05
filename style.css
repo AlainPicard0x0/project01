@@ -352,7 +352,7 @@ footer p{
     grid-area: 1 / 6 / 2 / 9;
 }
 .details{
-    grid-area: 2 / 3 / 3 / 10;
+    grid-area: 2 / 2 / 3 / 9;
 }
 .price{
     grid-area: 1 / 1 / 2 / 2;
