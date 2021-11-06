@@ -351,7 +351,7 @@ footer p{
     align-items: center;
 }
 .title{
-    grid-area: 1 / 6 / 2 / 9;
+    grid-area: 1 / 5 / 2 / 8;
 }
 .details{
     grid-area: 2 / 2 / 3 / 9;
