@@ -362,6 +362,7 @@ footer p{
     justify-content: center;
     align-items: center;
     margin-right: 18px;
+    font-size: 1.2rem;
 }
 .remove-item{
     grid-area: 3 / 8 / 4 / 9;
