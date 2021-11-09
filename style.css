@@ -342,7 +342,7 @@ footer p{
     min-width: 20vw;
     min-height: 25px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .cart-img{
     grid-area: 2 / 1 / 4 / 2;
