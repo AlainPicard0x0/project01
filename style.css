@@ -336,14 +336,7 @@ footer p{
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr);
 } */
-.checkout{
-    display: grid;
-    margin: 10px auto;
-    min-width: 20vw;
-    min-height: 25px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
+
 .cart-img{
     grid-area: 2 / 1 / 4 / 2;
     display: flex;
@@ -366,6 +359,15 @@ footer p{
 }
 .remove-item{
     grid-area: 3 / 8 / 4 / 9;
+}
+
+.checkout{
+    display: grid;
+    margin: 10px auto;
+    min-width: 16vw;
+    min-height: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 /********************************************/
