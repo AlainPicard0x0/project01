@@ -394,13 +394,14 @@ footer p{
     align-items: center;
 }
 .item-container{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .item-container-flex{
-    display: flex;
     flex-direction: column;
     align-self: center;
+    justify-self: end;
 }
 .item-price-container{
     margin-top: 10px;
