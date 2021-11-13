@@ -242,12 +242,14 @@ function displayItemsInCart(cartContainer, arr) {
         let itemContents = `<div class="item-img-container">
                                 <img src="${arr[i]["icon"]}" width="60px" height="60px">
                             </div>
-                            <div class="item-title-container">
-                                <p>${arr[i]["title"]}</p>
-                            </div>
-                            <div class="item-price-container">
-                                <p>Price: ${arr[i]["price"]}</p>
-                                <hr>
+                            <div class="item-container-flex">
+                                <div class="item-title-container">
+                                    <p>${arr[i]["title"]}</p>
+                                </div>
+                                <div class="item-price-container">
+                                    <p>Price: ${arr[i]["price"]}</p>
+                                    <hr>
+                                </div>
                             </div>`;
         newListItem.innerHTML = itemContents;
         cartItemContainer.append(newListItem);

@@ -386,6 +386,14 @@ footer p{
     display: flex;
     justify-content: space-around;
 }
+.item-container{
+    display: flex;
+    justify-content: space-around;
+}
+.item-container-flex{
+    display: flex;
+    flex-direction: column;
+}
 .checkout-btn{
     grid-area: 5 / 1 / 6 / 4;
 }
@@ -511,11 +519,7 @@ footer p{
 .cart-items{
     padding: 5px;
 }
-.item-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
+
 /* .item-img-container{
     grid-area: 1 / 1 / 3 / 3;
 } */
