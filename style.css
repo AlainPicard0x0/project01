@@ -396,12 +396,11 @@ footer p{
 .item-container{
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 .item-container-flex{
-    flex-direction: column;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
 }
 .item-price-container{
     margin-top: 10px;
