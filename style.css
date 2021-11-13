@@ -385,6 +385,7 @@ footer p{
     grid-area: 4 / 1 / 5 / 4;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .item-container{
     display: flex;
