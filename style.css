@@ -393,6 +393,10 @@ footer p{
 .item-container-flex{
     display: flex;
     flex-direction: column;
+    align-self: center;
+}
+.item-price-container{
+    margin-top: 10px;
 }
 .checkout-btn{
     grid-area: 5 / 1 / 6 / 4;
