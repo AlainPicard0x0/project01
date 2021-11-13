@@ -383,6 +383,8 @@ footer p{
 }
 .checkout-container{
     grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    justify-content: space-around;
 }
 .checkout-btn{
     grid-area: 5 / 1 / 6 / 4;
