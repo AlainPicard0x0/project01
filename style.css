@@ -406,7 +406,8 @@ footer p{
     margin-top: 10px;
 }
 .checkout-container p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 .checkout-btn{
     grid-area: 5 / 1 / 6 / 4;
