@@ -409,6 +409,11 @@ footer p{
     font-size: 1.4rem;
     font-weight: bold;
 }
+#cart-total {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
 .checkout-btn{
     grid-area: 5 / 1 / 6 / 4;
 }
