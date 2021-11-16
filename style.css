@@ -333,16 +333,6 @@ footer p{
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-/* #cart-container{
-    display: grid;
-    margin: 10px auto;
-    min-width: 70vw;
-    min-height: 25px;
-    justify-content: center;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-} */
-
 .cart-img{
     grid-area: 2 / 1 / 4 / 2;
     display: flex;
@@ -373,7 +363,6 @@ footer p{
     min-width: 16vw;
     min-height: 25px;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 40px 40px 100px 75px 50px; */
     grid-template-rows: 40px 40px auto 75px 50px;
 }
 .continue-shopping{
@@ -420,28 +409,9 @@ footer p{
 
 /********************************************/
 
-/* #cart-container{
-    display: grid;
-    margin: 10px auto 10px auto;
-    width: 95vw;
-    min-height: 25px;
-    justify-content: center;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-#cart-container{
-    grid-area: 1 / 12 / 2 / 13;
-} */
 #mobile-cart-container{
     display: none;
 }
-/* #cart-section{
-    grid-area: 1 / 1 / 3 / 11;
-    margin: 20px 0;
-} */
-/* .checkout{
-    grid-area: 1 / 11 / 2 / 13; 
-} */
 #cart-header{
     display: flex;
     justify-content: left;
@@ -470,23 +440,6 @@ footer p{
 .remove-item:hover{
     cursor: pointer;
 }
-/* .title{
-    grid-area: 1 / 1 / 2 / 3;
-} */
-/* .cart-img{
-    grid-area: 2 / 1 / 7 / 3;
-} */
-/* #price{
-    grid-area: 7 / 1 / 8 / 3;
-    font-size: 1.5rem;
-    margin-left: 30px;
-} */
-/* .remove-item{
-    grid-area: 5 / 10 / 7 / 12;
-} */
-/* .details{
-    grid-area: 2 / 3 / 5 / 8;
-} */
 .home-button{
     width: 8rem;
     height: 2rem;
@@ -539,16 +492,6 @@ footer p{
 .cart-items{
     padding: 5px;
 }
-
-/* .item-img-container{
-    grid-area: 1 / 1 / 3 / 3;
-} */
-/* .item-title-container{
-    grid-area: 1 / 3 / 2 / 5;
-} */
-/* .item-price-container{
-    grid-area: 2 / 3 / 3 / 5;
-}  */
 #cart-mid-page{
     margin: 20px auto;
 }
@@ -751,16 +694,6 @@ footer p{
         grid-template-rows: repeat(3, 1fr);
     }
 
-    /* #cart-section{
-        display: grid;
-        margin: 10px 0;
-        width: 95vw;
-        min-height: 275px;
-        justify-content: center;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-    } */
-
     .checkout{
         grid-area: 1 / 12 / 2 / 13; 
     }
@@ -772,7 +705,6 @@ footer p{
     .cart-div{
         width: 70vw;
         height: 245px;
-        /* grid-area: 1 / 1 / 8 / 11; */
     }
 
     #cart-section h2{
@@ -841,12 +773,10 @@ footer p{
         grid-template-rows: repeat(7, 1fr);
     }
     header{
-        /* min-height: 7vh; */
         background-color: #fff;
         border-bottom: solid 1px #fff;
     }
     .index-header, #cart-header{
-        /* min-height: 6rem; */
         display: none;
     }
     .index-header-mobile{
@@ -992,7 +922,9 @@ footer p{
     .models, .social-media {
         display: none;
     }
+
     /*selection.html page*/
+
     .flex-display{
         display: flex;
         flex-direction: column;
@@ -1030,7 +962,6 @@ footer p{
         text-align: center;
         font-weight: bold;
         background-image: linear-gradient(#53b6f0, #0d93e0);
-        /* background-color:rgb(182, 51, 3); */
         border-radius: 50%;
         width: 2rem;
         height: 2rem;
@@ -1067,8 +998,6 @@ footer p{
         top: 7px;
     }
     .cart-num-mobile{
-        /* display: flex;
-        justify-content: space-between; */
         color:#fff;
         text-align: center;
         font-weight: bold;
@@ -1085,7 +1014,6 @@ footer p{
     /*******************Cart Section*******************/
     
     #cart-container{
-        /* display: none; */
         display: grid;
         margin: 5px auto 5px auto;
         width: 95vw;
@@ -1094,15 +1022,6 @@ footer p{
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(7, 1fr);
     }
-    /* #mobile-cart-container{
-        display: grid;
-        margin: 10px auto 45px auto;
-        width: 95vw;
-        min-height: 275px;
-        justify-content: center;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-    } */
     #cart-section{
        display: none;
     }
@@ -1172,7 +1091,6 @@ footer p{
     .your-order-h3{
         font-size: 1.2rem;
         color: rgb(60, 60, 60);
-        /* border: solid 2px #333; */
         background-color: #f4f4f4;
     }
     .checkout-container{
