@@ -575,7 +575,10 @@ footer p{
     
     /*******************Cart Section*******************/
     .grid-container{
-        width: 77vw;
+        width: 70vw;
+    }
+    .checkout{
+        width: 21vw;
     }
     #cart-section{
         margin: 10px 20px;
