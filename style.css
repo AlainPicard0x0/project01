@@ -689,24 +689,7 @@ footer p{
     }       
     
     /*******************Cart Section*******************/
-    /* #cart-container{
-        display: grid;
-        margin: 5px auto 5px auto;
-        width: 95vw;
-        min-height: 25px;
-        justify-content: center;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    } */
-
-    /* .checkout{
-        grid-area: 1 / 12 / 2 / 13; 
-    } */
-
-    /* #cart-container{
-        grid-area: 1 / 12 / 2 / 13;
-    } */
-
+    
     .cart-div{
         width: 70vw;
         height: 245px;
