@@ -1069,7 +1069,7 @@ footer p{
     }
     .checkout{
         min-height: 270px;
-        width: 250px;
+        width: 95vw;
         border: solid 1px #000;
         margin: 10px 27px;
         text-align: center;
