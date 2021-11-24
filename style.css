@@ -1129,6 +1129,10 @@ footer p{
     .item-img-container{
         grid-area: 1 / 1 / 3 / 3;
     }
+    .checkout-container-image{
+        width: 80px;
+        height: 80px;
+    }
     .item-container-flex{
         grid-area: 1 / 3 / 3 / 5;
     }
