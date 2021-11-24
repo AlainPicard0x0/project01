@@ -191,7 +191,7 @@ function displayCart(cartSection, arr) {
         let newItem = document.createElement("div");
         newItem.classList.add("box");
         let itemContents = `<div id="${i}" class="cart-div grid-container">
-                                <img class="cart-img" width="125px" height="125px" class="img-src" src="${arr[i]["icon"]}">
+                                <img class="cart-img" class="img-src" src="${arr[i]["icon"]}">
                                 <p class="title">${arr[i]["title"]}</p>
                                 <p id="price" class="price">${arr[i]["price"]}</p>
                                 <p class="details">${arr[i]["details"]}</p>
