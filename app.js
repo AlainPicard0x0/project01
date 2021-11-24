@@ -240,7 +240,7 @@ function displayItemsInCart(cartContainer, arr) {
         let newListItem = document.createElement("div");
         newListItem.className = "item-container";
         let itemContents = `<div class="item-img-container">
-                                <img src="${arr[i]["icon"]}" width="60px" height="60px">
+                                <img class="checkout-container-image" src="${arr[i]["icon"]}">
                             </div>
                             <div class="item-container-flex">
                                 <div class="item-title-container">
