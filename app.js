@@ -116,6 +116,16 @@ function runApp() {
         })
     }
 
+    // Remove items from mobile cart
+    let mobileRemoveButton = document.getElementsByClassName("checkout-container-remove-btn");
+    for(let i = 0; i < mobileRemoveButton.length; i++) {
+        mobileRemoveButton[i].addEventListener("click", (e) => {
+            let removeItem = e.target;
+            removeSelected(removeItem);
+        })
+    }
+    
+
     //Get continue shopping button and add eventListener
     const continueShoppingBtn = document.getElementById("continue-shopping-btn");
     if(continueShoppingBtn) {
@@ -223,7 +233,7 @@ function removeItems(cartSection) {
         cartSection.removeChild(cartSection.firstChild);
     }
 }
-//Remove selected item from card
+//Remove selected item from cart
 function removeSelected(e) {
     let buttonParent = e.parentElement;
     let itemId = buttonParent.id;
@@ -234,7 +244,7 @@ function removeSelected(e) {
 }
 
 //Add items in shopping cart to shopping cart display and give totals
-function displayItemsInCart(cartContainer, arr) {    
+function displayItemsInCart(cartItemContainer, arr) {    
     //create divs for each cart item
     for(let i = 0; i < arr.length; i++) {
         let newListItem = document.createElement("div");
