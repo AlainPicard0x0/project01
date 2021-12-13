@@ -745,6 +745,11 @@ footer p{
     }
     .checkout{
         grid-area: 1 / 2 / 8 / 12; 
+        min-height: 270px;
+        width: 80vw;
+        border: solid 1px #000;
+        margin: 10px 27px;
+        text-align: center;
     }
     #cart-section h2{
         margin: 10px;
@@ -795,13 +800,6 @@ footer p{
     }
     .shopping-cart-h2{
         margin: 0 30px;
-    }
-    .checkout{
-        min-height: 270px;
-        width: 95vw;
-        border: solid 1px #000;
-        margin: 10px 27px;
-        text-align: center;
     }
     .checkout h3{
         text-align: center;
