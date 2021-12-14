@@ -737,13 +737,16 @@ footer p{
 
     /********* Cart Section ***************/
 
-    #cart-container{
+    .checkout {
+        margin: 10px 0;
+    }
+    /* #cart-container{
         display: none;
     }
     #cart-section{
        display: none;
-    }
-    .checkout{
+    } */
+    /* .checkout{
         grid-area: 1 / 2 / 8 / 12; 
         min-height: 270px;
         width: 80vw;
@@ -896,7 +899,7 @@ footer p{
     
     #branding{
         margin: 5px;
-    } 
+    }  */
     
 }
     
