@@ -740,6 +740,14 @@ footer p{
     .checkout {
         margin: 10px 0;
     }
+
+    .cart-div {
+        width: 60vw;
+    }
+
+    .checkout {
+        width: 30vw;
+    }
     /* #cart-container{
         display: none;
     }
