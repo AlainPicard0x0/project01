@@ -729,6 +729,10 @@ footer p{
     .your-order-h3{
         font-size: 1rem;
     }
+
+    p.title {
+        grid-area: 1 / 2 / 2 / 8;
+    }
 }
 
 /**************************/
@@ -747,6 +751,10 @@ footer p{
 
     .checkout {
         width: 30vw;
+    }
+
+    p.title {
+        grid-area: 1 / 2 / 2 / 8;
     }
     /* #cart-container{
         display: none;
