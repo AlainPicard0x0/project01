@@ -740,7 +740,7 @@ footer p{
 @media(max-width: 992px) {
 
     /********* Cart Section ***************/
-
+   
     .checkout {
         margin: 10px 0;
     }
@@ -755,6 +755,10 @@ footer p{
 
     p.title {
         grid-area: 1 / 2 / 2 / 8;
+    }
+
+    .cart-div .title {
+        font-size: 1.0rem;
     }
     /* #cart-container{
         display: none;
