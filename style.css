@@ -771,6 +771,10 @@ footer p{
     .container{
         width: 100%;
     }
+    .remove-item {
+        width: 100px;
+        height: 35px;
+    }
 }
     
 
