@@ -768,8 +768,11 @@ footer p{
     body {
         background-color: #aaa;
     }
-    .container{
+    .container {
         width: 100%;
+    }
+    .grid-container {
+        grid-template-rows: repeat(4, 1fr);
     }
     .remove-item {
         width: 100px;
@@ -778,6 +781,9 @@ footer p{
     .cart-img {
         width: 100px;
         height: 100px;
+    }
+    .details {
+        grid-area: 2 / 2 / 4 / 9;
     }
 }
 
