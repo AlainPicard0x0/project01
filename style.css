@@ -776,8 +776,9 @@ footer p{
         padding: 20px 5px;
     }
     .remove-item {
-        width: 100px;
+        width: 85px;
         height: 35px;
+        font-size: 0.75rem;
         grid-area: 4 / 1 / 5 / 2;
     }
     .cart-img {
