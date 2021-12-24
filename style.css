@@ -790,6 +790,17 @@ footer p{
     }
 }
 
+/**************************/
+
+@media(max-width: 560px) {
+    #cart-container{
+        display: none;
+    }
+    #cart-section{
+       display: none;
+    }
+}
+
     
 
 /**************************/
