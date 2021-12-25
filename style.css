@@ -799,6 +799,9 @@ footer p{
     #cart-section{
        display: none;
     }
+    .checkout {
+        width: 80vw;
+    }
 }
 
     
