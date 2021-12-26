@@ -793,6 +793,9 @@ footer p{
 /**************************/
 
 @media(max-width: 560px) {
+    body {
+        font-size: 1.0rem;
+    }
     #cart-container{
         display: none;
     }
