@@ -802,6 +802,10 @@ footer p{
     .checkout {
         width: 80vw;
     }
+    .checkout-container-image {
+        width: 140px;
+        height: 140px;
+    }
 }
 
     
