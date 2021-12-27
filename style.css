@@ -809,6 +809,12 @@ footer p{
         width: 140px;
         height: 140px;
     }
+    #bottom-showcase {
+        background: url("./assets/iphone.jpeg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
 }
 
     
