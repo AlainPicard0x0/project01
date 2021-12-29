@@ -820,6 +820,11 @@ footer p{
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(3, 1fr);
     }
+    #newsletter {
+        width: 85%;
+        margin: auto;
+        grid-area: 1 / 1 / 2 / 4;
+    }
 }
 
     
