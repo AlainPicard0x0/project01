@@ -821,13 +821,15 @@ footer p{
         grid-template-columns: repeat(3, 1fr);
     }
     #newsletter {
-        /* width: 95vw; */
+        width: 95vw;
         margin: auto;
         grid-area: 1 / 1 / 2 / 4;
     }
     #fname,
-    #lname {
+    #lname,
+    #email {
         width: 60vw;
+        margin: auto;
     }
 }
 
