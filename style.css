@@ -827,7 +827,8 @@ footer p{
     }
     #fname,
     #lname,
-    #email {
+    #email,
+    #newsletter-button {
         width: 60vw;
         margin: auto;
     }
