@@ -832,6 +832,11 @@ footer p{
         width: 60vw;
         margin: auto;
     }
+    .models {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
     
