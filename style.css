@@ -822,7 +822,7 @@ footer p{
     }
     #newsletter {
         width: 95vw;
-        margin: auto;
+        margin: 40px auto;
         grid-area: 1 / 1 / 2 / 4;
     }
     #fname,
