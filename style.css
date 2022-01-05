@@ -841,6 +841,9 @@ footer p{
     .social-media {
         font-size: 0.9rem;
     }
+    footer p {
+        margin: 20px 10px;
+    }
 
 }
 
