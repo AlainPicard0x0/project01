@@ -815,6 +815,9 @@ footer p{
         background-position: center;
         height: 40vh;
     }
+    .flex-container-two {
+        justify-content: center;
+    }
     .flex-container-footer {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
