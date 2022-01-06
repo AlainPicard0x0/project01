@@ -796,6 +796,9 @@ footer p{
     body {
         font-size: 1.0rem;
     }
+    #branding {
+        margin: 10px;
+    }
     #cart-container{
         display: none;
     }
