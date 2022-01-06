@@ -796,8 +796,12 @@ footer p{
     body {
         font-size: 1.0rem;
     }
+    #cart-header {
+        margin: auto;
+        justify-content: center;
+    }
     #branding {
-        margin: 10px;
+        margin: 20px 0;
     }
     #cart-container{
         display: none;
