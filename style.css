@@ -818,6 +818,9 @@ footer p{
         width: 140px;
         height: 140px;
     }
+    #cart-mid-page .container h3 {
+        font-size: 1.0rem;
+    }
     #cart-mid-page .container p {
         padding: 15px;
     }
