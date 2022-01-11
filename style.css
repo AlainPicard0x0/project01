@@ -862,6 +862,7 @@ footer p{
     }
     footer p {
         margin: 20px 10px;
+        font-size: 0.8rem;
     }
 
 }
