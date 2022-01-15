@@ -1049,9 +1049,8 @@ footer p{
         text-align: left;
         padding: 6px;
     }
-    .models,
-    .social-media {
-        
+    .models{
+        margin: 0;
     }
 
     /*selection.html page*/
