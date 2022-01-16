@@ -1013,7 +1013,9 @@ footer p{
     }
     footer p{
         margin: 5px;
-        /* font-size: 0.7rem; */
+    }
+    .footer-p #copyright{
+        font-size: 0.7rem;
     }
     #footer-border{
         border: solid 1px #fff;
