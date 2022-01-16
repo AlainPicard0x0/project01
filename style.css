@@ -1294,6 +1294,10 @@ footer p{
     #cart-mid-page{
         margin: 20px auto;
     }
+    .models,
+    .social-media{
+        align-self: start;
+    }
 
     /***************************/
 
