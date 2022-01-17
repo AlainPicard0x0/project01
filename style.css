@@ -1013,6 +1013,7 @@ footer p{
     }
     footer p{
         margin: 5px;
+        font-size: 0.9rem;
     }
     .flex-container-two.footer-p p{
         font-size: 0.7rem;
@@ -1057,7 +1058,6 @@ footer p{
     }
     .social-media{
         align-self: start;
-        font-size: 1.0rem;
     }
 
     /*selection.html page*/
