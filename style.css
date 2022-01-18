@@ -876,12 +876,12 @@ footer p{
     body{
         font-size: 0.5rem;
         background-color: #fff;
-    }
-   
+    }   
     .flex-container-footer{
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
+        align-items: center;          
+        grid-template-rows: 55% 45%;        
     }
     .flex-container-grid{
         display: flex;
