@@ -1027,7 +1027,8 @@ footer p{
         transform: translate(-50%);
     }
     #mobile-newsletter{
-        display: block;
+        display: none;
+        /* display: block; */
         margin: 5px;
     }
     #fname,#lname{
