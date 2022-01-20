@@ -808,6 +808,10 @@ footer p{
     #branding {
         margin: 20px 0;
     }
+    #selection-container img{
+        width: 30vw;
+        height: 15vh;
+    }
     #cart-container{
         display: none;
     }
