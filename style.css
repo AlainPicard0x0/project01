@@ -799,6 +799,9 @@ footer p{
     #cart-header {
         display: none;
     }
+    .index-header {
+        display: none;
+    }
     .index-header-mobile {
         display: block;
     }
