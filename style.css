@@ -771,6 +771,12 @@ footer p{
     .container {
         width: 100%;
     }
+    #bottom-showcase {
+        background: url("./assets/iphone.jpeg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
     .grid-container {
         grid-template-rows: repeat(4, 1fr);
         padding: 20px 5px;
