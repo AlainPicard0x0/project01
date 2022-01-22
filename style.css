@@ -787,6 +787,9 @@ footer p{
         font-size: 0.75rem;
         grid-area: 4 / 1 / 5 / 2;
     }
+    .cart-div {
+        width: 80vw;
+    }
     .cart-img {
         width: 100px;
         height: 100px;
