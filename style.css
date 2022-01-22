@@ -794,6 +794,9 @@ footer p{
     .details {
         grid-area: 2 / 2 / 4 / 9;
     }
+    .checkout {
+        display: none;
+    }
 }
 
 /**************************/
