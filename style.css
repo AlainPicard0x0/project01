@@ -771,6 +771,10 @@ footer p{
     .container {
         width: 100%;
     }
+    
+    .index-header-mobile {
+        display: block;
+    }
     #bottom-showcase {
         background: url("./assets/iphone.jpeg") no-repeat;
         background-size: cover;
