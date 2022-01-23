@@ -833,11 +833,8 @@ footer p{
         width: 30vw;
         height: 15vh;
     }
-    #cart-container{
-        display: none;
-    }
     #cart-section{
-       display: none;
+       display: block;
     }
     .checkout {
         width: 80vw;
