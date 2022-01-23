@@ -771,6 +771,9 @@ footer p{
     .container {
         width: 100%;
     }
+    .index-header {
+        display: none;
+    }
     #cart-header {
         display: none;
     }
