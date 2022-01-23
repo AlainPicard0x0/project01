@@ -771,7 +771,9 @@ footer p{
     .container {
         width: 100%;
     }
-    
+    #cart-header {
+        display: none;
+    }
     .index-header-mobile {
         display: block;
     }
