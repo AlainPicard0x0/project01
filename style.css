@@ -1186,10 +1186,10 @@ footer p{
     /*******************Cart Section*******************/
 
     #cart-container{
-        display: none;
+        display: block;
     }
     #cart-section{
-       display: none;
+       display: block;
     }
     .checkout{
         grid-area: 1 / 2 / 8 / 12; 
