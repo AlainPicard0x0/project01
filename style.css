@@ -829,6 +829,13 @@ footer p{
     #branding {
         margin: 20px 0;
     }
+    #showcase{
+        height: 70vh;
+        background: url("./assets/iphone-6.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #f4f4f4;
+    }
     #selection-container img{
         width: 30vw;
         height: 15vh;
