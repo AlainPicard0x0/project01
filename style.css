@@ -836,6 +836,9 @@ footer p{
         background-size: cover;
         background-color: #f4f4f4;
     }
+    #showcase-text {
+        float: none;
+    }
     #selection-container img{
         width: 30vw;
         height: 15vh;
