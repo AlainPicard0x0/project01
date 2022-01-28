@@ -861,6 +861,7 @@ footer p{
     }
     .details {
         font-size: 0.8rem;
+        grid-area: 2 / 2 / 4 / 10;
     }
     #cart-mid-page .container h3 {
         font-size: 1.0rem;
