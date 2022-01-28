@@ -859,6 +859,11 @@ footer p{
         width: 140px;
         height: 140px;
     }
+    .cart-div .title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
     .details {
         font-size: 0.8rem;
         grid-area: 2 / 2 / 4 / 10;
