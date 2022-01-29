@@ -790,6 +790,10 @@ footer p{
         grid-template-rows: repeat(4, 1fr);
         padding: 20px 5px;
     }
+    .flex-container-footer {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    }
     .remove-item {
         width: 85px;
         height: 35px;
