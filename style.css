@@ -794,6 +794,9 @@ footer p{
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     }
+    #newsletter {
+        grid-area: 1 / 1 / 2 / 5;
+    }
     .remove-item {
         width: 85px;
         height: 35px;
