@@ -803,6 +803,7 @@ footer p{
     }
     #email {
         width: 55vw;
+        margin: auto;
     }
     .remove-item {
         width: 85px;
