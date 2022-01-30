@@ -801,6 +801,9 @@ footer p{
     #lname {
         width: 55vw;
     }
+    #email {
+        width: 55vw;
+    }
     .remove-item {
         width: 85px;
         height: 35px;
