@@ -33,17 +33,79 @@ body{
     justify-content: space-between;
     align-items: baseline;
 }
+.flex-container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
 header{
-    height: 14vh;
+    /* min-height: 7vh; */
     background-color: #fff;
     border-bottom: solid 1px #fff;
 }
+.index-header{
+    height: 9vh;
+}
+
+/* Modile nav */
+.index-header-mobile{
+    min-height: 3rem;
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgb(231, 63, 2);      
+    /* background-color: #04AA6D; */
+    color: white;
+  }
+
+
+
 #branding{
     margin: 30px;
 }
 #branding h1{
     color: rgb(231, 63, 2);
-    display: inline;
+}
+.navbar{
+    position: relative;
 }
 .dropdown{
     background-color: none;
@@ -57,10 +119,14 @@ header{
     padding: 14px;
     background-color: #fff;
 }
+.dropdown-button:hover{
+    cursor: pointer;
+}
 .dropdown-content{
     display: none;
     min-width: 160px;
-    background-color: rgb(255,255,255, 0.7);
+    background-color: rgba(245, 245, 245, 0.7);
+    border: 1px solid #333;
 }
 .show{
     display: block;
@@ -84,10 +150,19 @@ header{
     font-size: 2rem;
     float: left;
     margin-top: 150px;
+    color: red;
+    text-shadow: 1px 1px 1px #000;
+}
+#showcase-main{
+    color:#edf053;
+    font-size: 3rem;
+}
+.box{
+    margin-bottom: 25px;
 }
 #case-display{
     margin: 80px;
-    height: 40vh;
+    min-height: 40vh;
 }
 #case-display img{
     width: 20vw;
@@ -97,10 +172,15 @@ header{
     background-color: #f4f4f4;
     height: 21vh;
     border-bottom: solid 1px #fff;
+    margin-top: 20px;
 }
 #mid-page h3{
     margin-top: 30px;
     font-size: 1.5rem;
+}
+.mid-page-paragraph{
+    width: 50vw;
+    margin: auto;
 }
 #mid-page p{
     margin: 10px;
@@ -131,15 +211,19 @@ footer p{
 #newsletter{
     margin: 100px 10px;
 }
+#mobile-newsletter{
+    display: none;
+}
 #fname,#lname{
     width: 13vw;
     height: 6vh;
-    padding: 2px
+    padding: 8px
 }
 #email{
     width: 26vw;
     height: 6vh;
     display: block;
+    padding: 8px;
 }
 #newsletter-button{
     width: 26vw;
@@ -147,6 +231,7 @@ footer p{
     display: block;
     background-color: #000;
     color: rgb(231,63,2);
+    margin-top: 1.5px;
 }
 .models li{
     list-style: none;
@@ -161,6 +246,9 @@ footer p{
     justify-content: space-evenly;
     align-items: center;
 }
+#branding a{
+    text-decoration: none;
+}
 #selection-container{
     margin: 10px;
 }
@@ -174,6 +262,16 @@ footer p{
     background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
     color: #fff;
     border: none;
+    border-radius: 5px;
+    transition: 0.2s all;
+}
+/* Add pressed effect when button is clicked */
+.add-to-cart:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.add-to-cart:hover{
+    cursor: pointer;
 }
 .cart-icon{
     margin: 0 5px 0 0; 
@@ -183,7 +281,8 @@ footer p{
     color:#fff;
     text-align: center;
     font-weight: bold;
-    background-color:rgb(182, 51, 3);
+    background-image: linear-gradient(#53b6f0, #0d93e0);
+    /* background-color:rgb(182, 51, 3); */
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
@@ -200,7 +299,1162 @@ footer p{
     color:rgb(182, 51, 3);
     cursor: pointer;
 }
-.shopping-cart{
-    float: right;
+#cart-button{
+    width: 7rem;
+    height: 1.8rem;
+    border: 1px solid #aaa;
+    box-shadow: 1px 1px 1px #888;
+    border-radius: 5px;
+    background-image: linear-gradient(#edf053, #cbe00d);
+}
+#cart-button:hover{
+    cursor: pointer;
+}
+.cart-num-span{
+    display: flex;
+    justify-content: center;
+}
+
+/*******************Cart Section*******************/
+
+/***************Refactor*********************/
+.cart-flex{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+/* .grid-container class is on shopping cart items generated in app.js */
+.grid-container{
+    display: grid;
+    margin: 10px auto;
+    width: 70vw;
+    min-height: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.cart-img{
+    grid-area: 2 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+}
+.title{
+    grid-area: 1 / 5 / 2 / 8;
+}
+.details{
+    grid-area: 2 / 2 / 3 / 9;
+}
+.price{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    font-size: 1.2rem;
+}
+.remove-item{
+    grid-area: 3 / 8 / 4 / 9;
+}
+.checkout{
+    display: grid;
+    align-self: flex-start;
+    margin: 10px auto;
+    min-width: 16vw;
+    min-height: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 40px auto 75px 50px;
+}
+.continue-shopping{
+    grid-area: 1 / 1 / 2 / 4;
+    height: 100%;
+    width: 100%;
+}
+.your-order-h3{
+    grid-area: 2 / 1 / 3 / 4;
+}
+.cart-items{
+    grid-area: 3 / 1 / 4 / 4;
+}
+.checkout-container{
+    grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+.item-container-flex{
+    align-self: center;
+    justify-self: center;
+}
+.item-price-container{
+    margin-top: 10px;
+}
+.checkout-container p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.checkout-container-image{
+    width: 60px;
+    height: 60px;
+}
+.checkout-container-remove-btn{
+    visibility: hidden;
+}
+#cart-total {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.checkout-btn{
+    grid-area: 5 / 1 / 6 / 4;
+}
+
+/********************************************/
+
+#mobile-cart-container{
+    display: none;
+}
+#cart-header{
+    display: flex;
+    justify-content: left;
+    margin-left: 110px;
+}
+#cart-section h2{
+    margin: 10px;
+}
+.cart-div{
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.cart-div .title{
+    font-size: 1.2rem;
+}
+#empty-cart, .remove-item{
+    background-image: linear-gradient(#53b6f0, #0d93e0);
+    width: 130px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    margin: 10px;
+    font-size: 1rem;
+}
+.remove-item:hover{
+    cursor: pointer;
+}
+.home-button{
+    width: 8rem;
+    height: 2rem;
+    background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+    color: #fff;
+    border: none;
+}
+.shopping-cart-h2{
+    margin: 0 30px;
+}
+.checkout{
+    min-height: 240px;
+    width: 250px;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 6px #333;
+    border-radius: 2px;
+    margin: 10px 27px;
+    text-align: center;
+}
+.checkout h3{
+    text-align: center;
+}
+.your-order-h3{
+    font-size: 1.2rem;
+    color: rgb(60, 60, 60);
+    background-color: #f4f4f4;
+}
+#checkout-btn{
+    width: 120px;
+    height: 32px;
+    background-image: linear-gradient(rgb(26, 207, 2), rgb(2, 129, 46));
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.continue-shopping{
+    background-image: linear-gradient(#edf053, #cbe00d);
+    padding: 5px;
+}
+.continue-shopping h3{
+    color: #777;
+}
+.continue-shopping a{
+    text-decoration: none;
+}
+.continue-shopping a:hover{
+    cursor: pointer;
+}
+.cart-items{
+    padding: 5px;
+}
+#cart-mid-page{
+    margin: 20px auto;
+}
+
+@media(max-width: 1680px) {
+    body{
+        font-size: 0.7rem;
+        background-color: aqua;
+    }
+
+    .container{
+        width: 95%;
+    }
+    
+    .grid-container{
+        margin: 5px auto;
+        width: 80vw;
+    }
+    
+    #branding{
+        margin: 25px;
+    }     
+    
+    #showcase{
+        height: 75vh;
+        background: url("./assets/iphone-6.jpg") no-repeat 0 -120px;
+        background-size: cover;
+    }
+
+    #showcase-text{
+        font-size: 1.4rem;
+        float: left;
+        margin-top: 120px;
+    }
+
+    #case-display{
+        margin: 50px;
+        min-height: 35vh;
+    }
+
+
+    #mid-page h3{
+        margin-top: 30px;
+        font-size: 1.0rem;
+    }
+
+    #mid-page p{
+        margin: 10px;
+        font-size: 0.8rem;
+    }  
+    
+    /*selection.html page*/
+       
+    #selection-container{
+        margin: 25px;
+        padding: 15px;
+    }
+
+    #selection-container img{
+        width: 18vw;
+        height: 26vh;
+    }
+
+    .add-to-cart{
+        width: 7rem;
+        height: 1.8rem;
+        background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }  
+
+    #cart-button{
+        width: 6rem;
+        height: 1.7rem;
+        border: 1px solid #aaa;
+        box-shadow: 1px 1px 1px #888;
+        border-radius: 5px;
+        background-image: linear-gradient(#edf053, #cbe00d);
+    }       
+    
+    /*******************Cart Section*******************/
+    .grid-container{
+        width: 70vw;
+    }
+    .checkout{
+        width: 21vw;
+    }
+    #cart-section{
+        margin: 10px 20px;
+    }  
+
+    #cart-section h2{
+        margin: 10px;
+    }
+
+    .cart-div .title{
+        font-size: 1.2rem;
+    }
+
+    #checkout-btn:hover{
+        cursor: pointer;
+    }
+
+    #empty-cart, .remove-item{
+        font-size: 0.8rem;
+    }
+
+    #price{
+        font-size: 1.0rem;
+        margin-left: 16px;
+        font-weight: 550;
+    }
+
+    .your-order-h3{
+        font-size: 1rem;
+    }
+    
+}
+
+@media(max-width: 1440px) {
+    body{
+        font-size: 0.7rem;
+        background-color: #edf053;
+    }
+
+    .container{
+        width: 95%;
+    }
+    
+    .grid-container{
+        margin: 5px auto;
+        max-width: 80vw;
+    }
+    
+    #branding{
+        margin: 25px;
+    }     
+    
+    #showcase{
+        height: 75vh;
+        background: url("./assets/iphone-6.jpg") no-repeat 0 -120px;
+        background-size: cover;
+    }
+
+    #showcase-text{
+        font-size: 1.4rem;
+        float: left;
+        margin-top: 120px;
+    }
+
+    #case-display{
+        margin: 50px;
+        min-height: 35vh;
+    }
+
+    #mid-page h3{
+        margin-top: 30px;
+        font-size: 1.0rem;
+    }
+
+    #mid-page p{
+        margin: 10px;
+        font-size: 0.8rem;
+    }  
+    
+    /*selection.html page*/
+       
+    #selection-container{
+        margin: 25px;
+        padding: 15px;
+    }
+
+    #selection-container img{
+        width: 18vw;
+        height: 26vh;
+    }
+
+    .add-to-cart{
+        width: 7rem;
+        height: 1.8rem;
+        background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }  
+
+    #cart-button{
+        width: 6rem;
+        height: 1.7rem;
+        border: 1px solid #aaa;
+        box-shadow: 1px 1px 1px #888;
+        border-radius: 5px;
+        background-image: linear-gradient(#edf053, #cbe00d);
+    }       
+    
+    /*******************Cart Section*******************/
+    
+    .cart-div{
+        width: 70vw;
+        height: 245px;
+    }
+
+    #cart-section h2{
+        margin: 10px;
+    }
+
+    .cart-div .title{
+        font-size: 1.2rem;
+    }
+
+    #checkout-btn:hover{
+        cursor: pointer;
+    }
+
+    #empty-cart, .remove-item{
+        font-size: 0.8rem;
+    }
+
+    #price{
+        font-size: 1.0rem;
+        margin-left: 16px;
+        font-weight: 550;
+    }
+
+    .your-order-h3{
+        font-size: 1rem;
+    }
+
+    p.title {
+        grid-area: 1 / 2 / 2 / 8;
+    }
+}
+
+/**************************/
+
+@media(max-width: 992px) {
+
+    /********* Cart Section ***************/
+   
+    .checkout {
+        margin: 10px 0;
+    }
+
+    .cart-div {
+        width: 60vw;
+    }
+
+    .checkout {
+        width: 30vw;
+    }
+
+    p.title {
+        grid-area: 1 / 2 / 2 / 8;
+    }
+
+    .cart-div .title {
+        font-size: 1.0rem;
+    }
+   
+
+/**************************/
+
+@media(max-width: 790px) {
+    body {
+        background-color: #aaa;
+    }
+    .container {
+        width: 100%;
+    }
+    .index-header {
+        display: none;
+    }
+    #cart-header {
+        display: none;
+    }
+    .index-header-mobile {
+        display: block;
+    }
+    #bottom-showcase {
+        background: url("./assets/iphone.jpeg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
+    .grid-container {
+        grid-template-rows: repeat(4, 1fr);
+        padding: 20px 5px;
+        max-width: 90vw;
+    }
+    .flex-container-footer {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    }
+    #newsletter {
+        grid-area: 1 / 1 / 2 / 5;
+    }
+    #fname,
+    #lname {
+        width: 55vw;
+    }
+    #email {
+        width: 55vw;
+        margin: auto;
+    }
+    .remove-item {
+        width: 85px;
+        height: 35px;
+        font-size: 0.75rem;
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .shopping-cart-h2 {
+        margin: auto;
+        text-align: center;
+    }
+    .cart-div {
+        width: 90vw;
+    }
+    .cart-img {
+        width: 100px;
+        height: 100px;
+    }
+    .details {
+        grid-area: 2 / 2 / 4 / 9;
+    }
+    .checkout {
+        display: none;
+    }
+}
+
+/**************************/
+
+@media(max-width: 560px) {
+    body {
+        font-size: 1.0rem;
+    }
+    #cart-header {
+        display: none;
+    }
+    .index-header {
+        display: none;
+    }
+    .index-header-mobile {
+        display: block;
+    }
+    #branding {
+        margin: 20px 0;
+    }
+    #showcase{
+        height: 70vh;
+        background: url("./assets/iphone-6.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #f4f4f4;
+    }
+    #showcase-text {
+        float: none;
+    }
+    #selection-container img{
+        width: 30vw;
+        height: 15vh;
+    }
+    #cart-section{
+       display: block;
+    }
+    .grid-container {
+        max-width: 90vw;
+    }
+    .cart-div {
+        width: 90vw;
+    }
+    .checkout {
+        width: 80vw;
+    }
+    .checkout-container-image {
+        width: 140px;
+        height: 140px;
+    }
+    .cart-div .title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .details {
+        font-size: 0.8rem;
+        grid-area: 2 / 2 / 4 / 10;
+    }
+    #cart-mid-page .container h3 {
+        font-size: 1.0rem;
+    }
+    #cart-mid-page .container p {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+    #bottom-showcase {
+        background: url("./assets/iphone.jpeg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
+    .flex-container-two {
+        justify-content: center;
+    }
+    .flex-container-footer {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #newsletter {
+        width: 95vw;
+        margin: 40px auto;
+        grid-area: 1 / 1 / 2 / 4;
+    }
+    #fname,
+    #lname,
+    #email,
+    #newsletter-button {
+        width: 60vw;
+        margin: auto;
+    }
+    .models {
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+    .social-media {
+        font-size: 0.9rem;
+    }
+    footer p {
+        margin: 20px 10px;
+        font-size: 0.8rem;
+    }
+
+}
+
+    
+
+/**************************/
+
+
+@media (max-width: 414px) {
+    body{
+        font-size: 0.5rem;
+        background-color: #fff;
+    }   
+    .flex-container-footer{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;          
+        grid-template-rows: 55% 45%;        
+    }
+    .flex-container-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .flex-container-two{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .grid-container{
+        display: grid;
+        margin: 10px auto;
+        width: 75vw;
+        height: 275px;
+        justify-content: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+    header{
+        background-color: #fff;
+        border-bottom: solid 1px #fff;
+    }
+    .index-header, #cart-header{
+        display: none;
+    }
+    .index-header-mobile{
+        min-height: 3rem;
+        display: block;
+    }
+    #branding{
+        margin: 5px;
+    }
+    .navbar{
+        position: relative;
+    }
+    .dropdown{
+        background-color: none;
+        width: 12vw;
+    }
+    .dropdown-button{
+        border: none;
+        outline: none;
+        font-size: 1.0rem;
+        color: rgb(231,63,2);
+        padding: 14px;
+        background-color: #fff;
+    }
+    .dropdown-button:hover{
+        cursor: pointer;
+    }
+    .dropdown-content{
+        display: none;
+        min-width: 160px;
+        background-color: rgba(245, 245, 245, 0.7);
+        border: 1px solid #333;
+    }
+    .show{
+        display: block;
+    }
+    .dropdown-content a{
+        float: none;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        padding: 3px;
+        font-size: 1.0rem;
+    }
+    #showcase{
+        height: 70vh;
+        background: url("./assets/iphone-6.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #f4f4f4;
+    }
+    #showcase-text{
+        font-size: 2rem;
+        float: none;
+        margin-top: 150px;
+        color: red;
+        text-shadow: 1px 1px 1px #000;
+    }
+    #showcase-main{
+        color:#edf053;
+        font-size: 3rem;
+    }
+    .box{
+        margin-bottom: 15px;
+    }
+    #case-display{
+        margin: 50px;
+        min-height: 50rem;
+    }
+    #case-display img{
+        width: 75vw;
+        height: 30vh;
+    }
+    #mid-page{
+        background-color: #f4f4f4;
+        min-height: 21vh;
+        border-bottom: solid 1px #fff;
+    }
+    #mid-page h3{
+        margin-top: 15px;
+        font-size: 1.0rem;
+    }
+    .mid-page-paragraph{
+        width: 95vw;
+    }
+    #mid-page p{
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+    #bottom-showcase{
+        background: url("./assets/iphone.jpeg") no-repeat 0 0;
+        background-size: cover;
+        height: 40vh;
+    }
+    footer{
+        background-color: #111;
+        border-top: solid 1px #f4f4f4;
+        color: rgb(231,63,2);
+        position: relative;
+        padding: 15px;
+    }
+    footer p{
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+    .flex-container-two.footer-p p{
+        font-size: 0.7rem;
+    }
+    #footer-border{
+        border: solid 1px #fff;
+        height: 2px;
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #mobile-newsletter{
+        display: none;
+        /* display: block; */
+        margin: 5px;
+    }
+    #fname,#lname{
+        width: 90vw;
+        height: 6vh;
+    }
+    #email{
+        width: 90vw;
+        height: 6vh;
+        display: block;
+    }
+    #newsletter-button{
+        width: 90vw;
+        height: 6vh;
+        display: block;
+        background-color: #000;
+        color: rgb(231,63,2);
+        border-radius: 5px;
+    }
+    .models li{
+        list-style: none;
+        text-align: left;
+        padding: 6px;
+    }
+    .models{
+        margin: 0;
+        align-self: start;
+    }
+    .social-media{
+        align-self: start;
+    }
+
+    /*selection.html page*/
+
+    .flex-display{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #branding a{
+        text-decoration: none;
+    }
+    #selection-container{
+        margin: 10px;
+    }
+    #selection-container img{
+        width: 20vw;
+        height: 30vh;
+    }
+    .add-to-cart{
+        width: 8rem;
+        height: 2rem;
+        background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    .add-to-cart:hover{
+        cursor: pointer;
+    }
+    .cart-icon{
+        margin: 0 5px 0 0; 
+        display: inline-block;   
+    }
+    .cart-num{
+        color:#fff;
+        text-align: center;
+        font-weight: bold;
+        background-image: linear-gradient(#53b6f0, #0d93e0);
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+    }
+    .cart-num p{
+        text-align: center;
+        margin-top: .3rem;
+    }
+    .go-to-cart{
+        display: inline-block;
+    }
+    .go-to-cart:hover{
+        color:rgb(182, 51, 3);
+        cursor: pointer;
+    }
+    #cart-button{
+        width: 7rem;
+        height: 1.8rem;
+        border: 1px solid #aaa;
+        box-shadow: 1px 1px 1px #888;
+        border-radius: 5px;
+        background-image: linear-gradient(#edf053, #cbe00d);
+    }
+    #cart-button:hover{
+        cursor: pointer;
+    } 
+    #cart-text-mobile{
+        color: #fff;
+        font-size: 1.3rem;
+        display: inline-block;
+        margin-left: 16px;
+        position: relative;
+        top: 7px;
+    }
+    .cart-num-mobile{
+        color:#fff;
+        text-align: center;
+        font-weight: bold;
+        background-image: linear-gradient(#53b6f0, #0d93e0);
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 10px;
+        display: inline-block;
+    }       
+    
+    /*******************Cart Section*******************/
+
+    #cart-container{
+        display: none;
+    }
+    #cart-section{
+       display: none;
+    }
+    .checkout{
+        display: grid;
+        grid-area: 1 / 2 / 8 / 12; 
+    }
+    #cart-section h2{
+        margin: 10px;
+    }
+    .cart-div{
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .cart-div .title{
+        font-size: 2rem;
+    }
+    #empty-cart, .remove-item{
+        background-image: linear-gradient(#53b6f0, #0d93e0);
+        width: 130px;
+        height: 45px;
+        color: #fff;
+        border: none;
+        border-radius: 5%;
+        margin: 10px;
+        font-size: 1rem;
+    }
+    .remove-item:hover{
+        cursor: pointer;
+    }
+    .title{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .cart-img{
+        grid-area: 2 / 1 / 5 / 3;
+    }
+    #price{
+        grid-area: 7 / 1 / 8 / 3;
+        font-size: 1.5rem;
+        margin-left: 30px;
+    }
+    .remove-item{
+        grid-area: 5 / 10 / 7 / 12;
+    }
+    .details{
+        grid-area: 2 / 3 / 5 / 8;
+    }
+    .home-button{
+        width: 8rem;
+        height: 2rem;
+        background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+        color: #fff;
+        border: none;
+    }
+    .shopping-cart-h2{
+        margin: 0 30px;
+    }
+    .checkout{
+        min-height: 270px;
+        width: 95vw;
+        border: solid 1px #000;
+        margin: 10px 27px;
+        text-align: center;
+    }
+    .checkout h3{
+        text-align: center;
+    }
+    .your-order-h3{
+        font-size: 1.2rem;
+        color: rgb(60, 60, 60);
+        background-color: #f4f4f4;
+    }
+    .checkout-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        min-height: 25px;
+        margin: 5px auto;
+        font-size: 1.25rem;
+    }
+    #checkout-btn{
+        width: 120px;
+        height: 32px;
+        background-image: linear-gradient(rgb(26, 207, 2), rgb(2, 129, 46));
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .continue-shopping{
+        background-image: linear-gradient(#edf053, #cbe00d);
+        padding: 5px;
+    }
+    .continue-shopping h3{
+        color: #777;
+        font-size: 1.0rem;
+    }
+    .continue-shopping a{
+        text-decoration: none;
+    }
+    .continue-shopping a:hover{
+        cursor: pointer;
+    }
+    .cart-items{
+        padding: 5px;
+    }
+    .item-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .item-img-container{
+        grid-area: 1 / 1 / 3 / 3;        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .checkout-container-image{
+        width: 80px;
+        height: 80px;
+    }
+    .item-container-flex{
+        grid-area: 1 / 3 / 3 / 5;
+    }
+    .item-title-container{
+        grid-area: 1 / 3 / 2 / 5;
+    }
+    .item-title-container p{
+        font-size: 1.2rem;
+    }
+    .item-price-container{
+        grid-area: 2 / 3 / 3 / 5;
+    } 
+    .item-price-container p{
+        font-size: 1.1rem;        
+    }
+    .checkout-container-remove-btn{
+        visibility: visible;
+        width: 75px;
+        height: 24px;
+        background-image: linear-gradient(#53b6f0, #0d93e0);
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    #cart-mid-page{
+        margin: 20px auto;
+    }
+
+    /***************************/
+
+
+    .container{
+        width: 100%;
+    }
+    
+    .grid-container{
+        margin: 5px auto;
+        width: 100vw;
+    }
+    
+    #branding{
+        margin: 5px;
+    }     
+
+    
+
+    
+    
+    /*selection.html page*/
+       
+    #selection-container{
+        margin: 25px;
+        padding: 15px;
+    }
+
+    #selection-container img{
+        width: 70vw;
+        height: 26vh;
+    }
+
+    .add-to-cart{
+        width: 7rem;
+        height: 1.8rem;
+        background-image: linear-gradient( rgb(248, 69, 3),rgb(182, 51, 3));
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }  
+
+    #cart-button{
+        width: 6rem;
+        height: 1.7rem;
+        border: 1px solid #aaa;
+        box-shadow: 1px 1px 1px #888;
+        border-radius: 5px;
+        background-image: linear-gradient(#edf053, #cbe00d);
+    }       
+    
+    /*******************Cart Section*******************/
+
+    #cart-section{
+        margin: 10px 0;
+    }  
+
+    #cart-section h2{
+        margin: 10px;
+    }
+
+    .cart-div .title{
+        font-size: 1.2rem;
+    }
+
+    #checkout-btn:hover{
+        cursor: pointer;
+    }
+
+    #empty-cart, .remove-item{
+        font-size: 0.8rem;
+    }
+
+    #price{
+        font-size: 1.0rem;
+        margin-left: 16px;
+        font-weight: 550;
+    }
+
+    .your-order-h3{
+        font-size: 1rem;
+    }
+
 }
 

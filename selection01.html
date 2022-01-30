@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Online Store</title>
+        <title>Selection</title>
         <meta name="keywords" content="Online, clothing, clothes, shopping, e-commerce, sale">
         <meta name="description" content="Website for online shopping">
         <meta name="author" content="Alain Picard">
@@ -14,7 +14,7 @@
         <header class="index-header">
             <div class="container flex-container">
                 <div id="branding">
-                    <h1>The Phone Case Company</h1>
+                    <a href="./index.html"><h1>The Phone Case Company</h1></a>
                 </div>
                 <div class="navbar flex-container">
                     <div id="apple" class="dropdown">
@@ -71,10 +71,10 @@
                 <a href="#home" class="active">The Phone Case Company</a>
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
-                    <a href="selection01.html">iPhone 12</a>
+                    <a href="index.html">Home</a>
                     <a href="selection02.html">iPhone 11</a>
                     <a href="selection03.html">iPhone X</a>
-                    <div id="cart-text-mobile">Cart</div><div class="cart-num-mobile"><p class="items-in-cart-mobile">0</p></div>                                         
+                    <div id="cart-text-mobile">Cart</div><div class="cart-num-mobile"><p class="items-in-cart-mobile">0</p></div>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon">
@@ -82,46 +82,72 @@
                 </a>
             </div>
         </header>
-        <section id="showcase">
-            <div class="container">
-                <div id="showcase-text">
-                    <h1 id="showcase-main">iPhone 12 Cases</h1>
-                    <h1>GET YOURS TODAY!</h1>
+        <section id="selection-container">
+            <div class="container flex-display">
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-five.png">
+                    <p class="title">iPhone 12 Pro Max</p>
+                    <p id="price" class="price">$24.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-five.png">
+                    <p class="title">iPhone 12 Pro</p>
+                    <p id="price" class="price">$23.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-five.png">
+                    <p class="title">iPhone 12</p>
+                    <p id="price" class="price">$19.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-five.png">
+                    <p class="title">iPhone 12 Mini</p>
+                    <p id="price" class="price">$15.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-five.png">
+                    <p class="title">iPhone 12 Pro Max</p>
+                    <p id="price" class="price">$24.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-one.png">
+                    <p class="title">iPhone 12 Pro</p>
+                    <p id="price" class="price">$23.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-two.png">
+                    <p class="title">iPhone 12</p>
+                    <p id="price" class="price">$19.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="box" data-page-number="01">
+                    <img class="img-src" src="./assets/img-three.png">
+                    <p class="title">iPhone 12 Mini</p>
+                    <p id="price" class="price">$15.99</p>
+                    <textarea class="details" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius. Cum numquam, quae modi ratione laudantium doloremque officia? Libero, esse eveniet? Perferendis, maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus veritatis eius.</textarea>
+                    <button class="add-to-cart">Add To Cart</button>
                 </div>
             </div>            
-        </section>
-        <section id="case-display">
-            <div class="container flex-container-grid">
-                <div class="box">
-                    <img src="./assets/img-five.png">
-                    <p>Sample Text</p>
-                    <p id="price">$19.99</p>
-                </div>
-                <div class="box">
-                    <img src="./assets/img-one.png">
-                    <p>Sample Text</p>
-                    <p id="price">$24.99</p>
-                </div>
-                <div class="box">
-                    <img src="./assets/img-two.png">
-                    <p>Sample Text</p>
-                    <p id="price">$23.99</p>
-                </div>
-                <div class="box">
-                    <img src="./assets/img-three.png">
-                    <p>Sample Text</p>
-                    <p id="price">$29.99</p>
-                </div>
-            </div>
-        </section>
+        </section>        
         <section id="mid-page">
             <div class="container">
                 <h3>Welcome To Our Page! We're Glad You Came!</h3>
-                <div class="mid-page-paragraph">
-                    <p>Our company sells the newest and most popular
-                    phone cases around and we do it at the lowest prices around!
-                    We Guarantee You Won't Be Going Anywhere Else Once You Shop With Us!</p>
-                </div>
+                <p>Our company sells the newest and most popular<br>
+                phone cases around and we do it at the lowest prices around!<br>
+                We Guarantee You Won't Be Going Anywhere Else Once You Shop With Us!</p>
             </div>
         </section>
         <section id="bottom-showcase">
@@ -135,20 +161,6 @@
                     <input type="text" id="fname" placeholder="First Name"><input type="text" id="lname" placeholder="Last Name">
                     <input type="email" id="email" placeholder="email">
                     <button type="submit" id="newsletter-button">Subscribe</button>
-                </div>
-                <div id="mobile-newsletter">
-                    <div>
-                        <input type="text" id="fname" placeholder="First Name">
-                    </div>
-                    <div>
-                        <input type="text" id="lname" placeholder="Last Name">
-                    </div>
-                    <div>
-                        <input type="email" id="email" placeholder="email">
-                    </div>
-                    <div>
-                        <button type="submit" id="newsletter-button">Subscribe</button>
-                    </div>                    
                 </div>
                 <div class="models">
                     <ul>

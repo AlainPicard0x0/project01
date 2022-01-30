@@ -11,78 +11,92 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-            <div class="container flex-container">
-                <div id="branding">
-                    <h1>The Phone Case Company</h1>
+        <header id="cart-header">
+            <div id="branding">
+                <!--Empty div for spacing-->
+            </div>     
+            <div id="branding">
+                <a href="./index.html"><h1>The Phone Case Company</h1></a>
+            </div>            
+        </header>
+        <!--Modile Header-->
+        <header class="index-header-mobile">
+            <!-- <div id="branding">
+                <h1>The Phone Case Company</h1>
+            </div> -->
+            <div class="topnav">
+                <!--Link to W3Schools https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+                <a href="#home" class="active">The Phone Case Company</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="selection01.html">iPhone 12</a>
+                    <a href="selection02.html">iPhone 11</a>
+                    <a href="selection03.html">iPhone X</a>                                         
                 </div>
-                <div class="navbar flex-container">
-                    <div id="apple" class="dropdown">
-                        <button class="dropdown-button">iPhone 12<i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content" id="my-dropdown">
-                            <a href="#">iPhone 12 Pro Max</a>
-                            <a href="#">iPhone 12 Pro</a>
-                            <a href="#">iPhone 12</a>
-                            <a href="#">iPhone 12 Mini</a>
-                        </div>
-                    </div>
-                    <div id="apple" class="dropdown">
-                        <button class="dropdown-button">iPhone 11<i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content" id="my-dropdown">
-                            <a href="#">iPhone 11 Pro Max</a>
-                            <a href="#">iPhone 11 Pro</a>
-                            <a href="#">iPhone 11</a>
-                            <a href="#">iPhone SE</a>
-                        </div>
-                    </div>
-                    <div id="apple" class="dropdown">
-                        <button class="dropdown-button">iPhone X<i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content" id="my-dropdown">
-                            <a href="#">iPhone XS Max</a>
-                            <a href="#">iPhone XS</a>
-                            <a href="#">iPhone XR</a>
-                            <a href="#">iPhone X</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </header>
-        <section id="showcase">
-            <div class="container">
-                <div id="showcase-text">
-                    <h1>iPhone 12 Cases<br>GALAXY S20 Cases</h1>
-                    <h1>GET YOURS TODAY!</h1>
-                </div>
-            </div>            
-        </section>
-        <section id="case-display">
-            <div class="container flex-container-grid">
-                <div class="box">
-                    <img src="./assets/img-five.png">
-                    <p>Sample Text</p>
-                    <p id="price">$19.99</p>
-                </div>
-                <div class="box">
-                    <img src="./assets/img-one.png">
-                    <p>Sample Text</p>
-                    <p id="price">$24.99</p>
-                </div>
-                <div class="box">
-                    <img src="./assets/img-two.png">
-                    <p>Sample Text</p>
-                    <p id="price">$23.99</p>
-                </div>
-                <div class="box">
-                    <img src="./assets/img-three.png">
-                    <p>Sample Text</p>
-                    <p id="price">$29.99</p>
+        
+         <div class="shopping-cart-h2">
+            <h2>Shopping Cart</h2>
+            <hr>
+         </div>
+
+         <!-- Full screen cart section -->
+        <div class="cart-flex">
+            <div id="cart-container">
+                <div id="cart-section">
+                    <!--Shopping cart items generated-->
                 </div>
             </div>
-        </section>
-        <section id="mid-page">
+            <div class="checkout">
+                <div class="continue-shopping">
+                    <a id="continue-shopping-btn"><h3>&lt Continue Shopping</h3></a>                    
+                </div>
+                <div class="your-order-h3">
+                    <h3>Your Order</h3>
+                </div>                
+                <div class="cart-items">
+                    <!--Populate cart items here-->
+                </div>                
+                <div class="checkout-container">
+                    <div><p>Total &nbsp;</p></div>
+                    <div id="cart-total"><p>$0.00</p></div>
+                </div>
+                <div class="checkout-btn">
+                    <button id="checkout-btn">Check Out</button>
+                </div>
+            </div>    
+        </div>
+        
+         <!-- Mobile cart container            -->
+         <div id="mobile-cart-container">
+            <div id="mobile-cart-section">
+                Shopping cart items generated
+            </div>
+            <div class="checkout">
+                <div class="continue-shopping">
+                    <a id="continue-shopping-btn"><h3>&lt Continue Shopping</h3></a>
+                </div>
+                <h3 class="your-order-h3">Your Order</h3>
+                <div class="cart-items">
+                    Populate cart items here
+                </div>                
+                <div class="checkout-container">
+                    <div>Total</div>
+                    <div id="cart-total">$0.00</div>
+                </div>
+                <div>
+                    <button id="checkout-btn">Check Out</button>
+                </div>
+            </div>    
+         </div>    
+
+        <section id="cart-mid-page">
             <div class="container">
                 <h3>Welcome To Our Page! We're Glad You Came!</h3>
                 <p>Our company sells the newest and most popular<br>
@@ -96,7 +110,7 @@
             </div>
         </section>
         <footer>
-            <div class="container flex-container">
+            <div class="container flex-container-footer">
                 <div id="newsletter">
                     <input type="text" id="fname" placeholder="First Name"><input type="text" id="lname" placeholder="Last Name">
                     <input type="email" id="email" placeholder="email">
@@ -136,5 +150,11 @@
             </div>
         </footer>
         <script type="text/javascript" src="app.js"></script>
+        <script>
+            let cartSection = document.getElementById("cart-section");    
+            displayCart(cartSection, cartList);
+            let cartItemContainer = document.getElementsByClassName("cart-items")[0];
+            displayItemsInCart(cartItemContainer, cartList);
+        </script>
     </body>
 </html>
