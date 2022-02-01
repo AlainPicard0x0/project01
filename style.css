@@ -761,7 +761,7 @@ footer p{
         font-size: 1.0rem;
     }
    
-
+}
 /**************************/
 
 @media(max-width: 790px) {
@@ -1455,7 +1455,5 @@ footer p{
     .your-order-h3{
         font-size: 1rem;
     }
-
-}
 
 }
