@@ -802,6 +802,7 @@ footer p{
     #lname,
     #newsletter-button {
         width: 55vw;
+        margin: auto;
     }
     #email {
         width: 55vw;
