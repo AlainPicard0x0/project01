@@ -796,7 +796,7 @@ footer p{
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
     #newsletter {
-        grid-area: 1 / 1 / 2 / 5;
+        grid-area: 1 / 1 / 2 / 4;
     }
     #fname,
     #lname,
