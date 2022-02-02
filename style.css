@@ -793,7 +793,7 @@ footer p{
     }
     .flex-container-footer {
         display: grid;
-        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
     #newsletter {
         grid-area: 1 / 1 / 2 / 5;
