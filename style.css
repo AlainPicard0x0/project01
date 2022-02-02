@@ -798,6 +798,9 @@ footer p{
     #newsletter {
         grid-area: 1 / 1 / 2 / 4;
     }
+    .models {
+        padding: 0 45px;
+    }
     #fname,
     #lname,
     #newsletter-button {
