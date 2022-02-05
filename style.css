@@ -805,6 +805,9 @@ footer p{
     .models {
         padding: 0 45px;
     }
+    #copyright {
+        margin: 10px;
+    }
     #fname,
     #lname,
     #newsletter-button {
