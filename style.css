@@ -808,6 +808,7 @@ footer p{
     #copyright,
     #copyright-two {
         margin: 10px;
+        justify-self: center;
     }
     #fname,
     #lname,
