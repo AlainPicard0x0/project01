@@ -806,8 +806,8 @@ footer p{
         margin: 15px 0 10px 0;
     }
     .models {
-        padding: 0 45px;
-        
+        padding: 0 15px;
+        justify-self: center;
     }
     #copyright,
     #copyright-two {
