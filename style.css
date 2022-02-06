@@ -802,8 +802,12 @@ footer p{
     #newsletter {
         grid-area: 1 / 1 / 2 / 4;
     }
+    footer p {
+        margin: 15px 0 10px 0;
+    }
     .models {
         padding: 0 45px;
+        
     }
     #copyright,
     #copyright-two {
