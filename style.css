@@ -805,7 +805,8 @@ footer p{
     .models {
         padding: 0 45px;
     }
-    #copyright {
+    #copyright,
+    #copyright-two {
         margin: 10px;
     }
     #fname,
