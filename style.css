@@ -833,6 +833,7 @@ footer p{
     .shopping-cart-h2 {
         margin: auto;
         text-align: center;
+        font-size: 1.0rem;
     }
     .cart-div {
         width: 90vw;
