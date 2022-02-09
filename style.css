@@ -838,6 +838,9 @@ footer p{
     .cart-div {
         width: 90vw;
     }
+    p.title {
+        text-align: center;
+    }
     .cart-img {
         width: 100px;
         height: 100px;
