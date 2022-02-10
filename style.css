@@ -786,6 +786,10 @@ footer p{
     #showcase-text {
         float: none;
     }
+    #case-display img {
+        width: 15vw;
+        height: 15vh;
+    }
     #bottom-showcase {
         background: url("./assets/iphone.jpeg") no-repeat;
         background-size: cover;
