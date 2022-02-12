@@ -787,6 +787,9 @@ footer p{
     #showcase-text {
         float: none;
     }
+   body {
+        background-color: #fff;
+    }
     #case-display img {
         width: 15vw;
         height: 15vh;
