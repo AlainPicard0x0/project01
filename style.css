@@ -790,6 +790,9 @@ footer p{
    body {
         background-color: #fff;
     }
+    #case-display {
+        min-height: 25vh;
+    }
     #case-display img {
         width: 15vw;
         height: 15vh;
