@@ -841,6 +841,10 @@ footer p{
         width: 55vw;
         margin: auto;
     }
+    #selection-container img {
+        width: 195px;
+        height: 205px;
+    }
     .remove-item {
         width: 85px;
         height: 35px;
