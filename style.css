@@ -808,6 +808,9 @@ footer p{
         padding: 20px 5px;
         max-width: 90vw;
     }
+    #case-display {
+        margin: 20px 0;
+    }
     .flex-container-footer {
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
