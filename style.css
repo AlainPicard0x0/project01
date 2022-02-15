@@ -1180,6 +1180,9 @@ footer p{
     .social-media{
         align-self: start;
     }
+    footer p{
+        font-size: 0.8rem;
+    }
 
     /*selection.html page*/
 
