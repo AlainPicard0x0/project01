@@ -1170,7 +1170,8 @@ footer p{
     .models li{
         list-style: none;
         text-align: left;
-        padding: 6px;
+        padding: 5px;
+        font-size: 0.7rem;
     }
     .models{
         margin: 0;
