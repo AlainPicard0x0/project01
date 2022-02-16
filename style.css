@@ -1094,6 +1094,9 @@ footer p{
     .box{
         margin-bottom: 15px;
     }
+    .box{
+        font-size: 0.8rem;
+    }
     #case-display{
         margin: 50px;
         min-height: 50rem;
