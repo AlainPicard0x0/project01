@@ -1398,8 +1398,8 @@ footer p{
         flex-direction: column;
     }
     .checkout-container-image{
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
     }
     .item-container-flex{
         grid-area: 1 / 3 / 3 / 5;
