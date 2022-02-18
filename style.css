@@ -1390,6 +1390,8 @@ footer p{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 2fr 2fr 1fr;
+        box-shadow: 1px 1px 6px #333;
+        margin: 10px 0;
     }
     .item-img-container{
         grid-area: 1 / 1 / 3 / 3;        
