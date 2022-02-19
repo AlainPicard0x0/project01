@@ -924,6 +924,9 @@ footer p{
     .checkout {
         width: 80vw;
     }
+    .mid-page-paragraph {
+        width: 90vw;
+    }
     .checkout-container-image {
         width: 140px;
         height: 140px;
