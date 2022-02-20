@@ -895,6 +895,14 @@ footer p{
     .index-header-mobile {
         display: block;
     }
+    #cart-text-mobile{
+        color: #fff;
+        font-size: 1.3rem;
+        display: inline-block;
+        margin-left: 16px;
+        position: relative;
+        top: 7px;
+    }
     #branding {
         margin: 20px 0;
     }
