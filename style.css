@@ -829,6 +829,7 @@ footer p{
     .models {
         padding: 0 15px;
         justify-self: center;
+        font-size: 0.8rem;
     }
     #copyright,
     #copyright-two {
