@@ -780,6 +780,14 @@ footer p{
     .index-header-mobile {
         display: block;
     }
+    #cart-text-mobile{
+        color: #fff;
+        font-size: 1.3rem;
+        display: inline-block;
+        margin-left: 16px;
+        position: relative;
+        top: 7px;
+    }
     #showcase {
         background-position: center;
         height: 60vh;
