@@ -905,6 +905,9 @@ footer p{
     .checkout {
         display: none;
     }
+    #cart-mid-page h3 {
+        font-size: 1.2rem;
+    }
     #cart-mid-page p {
         font-size: 0.95rem;
     }
