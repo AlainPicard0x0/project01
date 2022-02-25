@@ -843,6 +843,9 @@ footer p{
     .mid-page-paragraph {
         width: 75vw;
     }
+    #mid-page p {
+        font-size: 0.9rem;
+    }
     #newsletter {
         grid-area: 1 / 1 / 2 / 4;
         margin: 50px 10px;
