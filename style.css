@@ -858,6 +858,9 @@ footer p{
         justify-self: center;
         font-size: 0.8rem;
     }
+    .social-media {
+        font-size: 0.8rem;
+    }
     #copyright,
     #copyright-two {
         margin: 10px;
