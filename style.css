@@ -743,6 +743,9 @@ footer p{
     .dropdown-button {
         padding: 14px 14px 0 14px;
     }
+    #branding h1 {
+        font-size: 1.3rem;
+    }
 
 
     /********* Cart Section ***************/
