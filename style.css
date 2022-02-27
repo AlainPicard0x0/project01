@@ -738,6 +738,12 @@ footer p{
 /**************************/
 
 @media(max-width: 992px) {
+    /********* Nav Section ****************/
+
+    .dropdown-button {
+        padding: 14px 14px 0 14px;
+    }
+
 
     /********* Cart Section ***************/
    
