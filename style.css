@@ -746,7 +746,9 @@ footer p{
 
 
     /********* Cart Section ***************/
-   
+   .container {
+       width: 98%;
+   }
     .checkout {
         margin: 10px 0;
     }
