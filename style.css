@@ -746,6 +746,9 @@ footer p{
     #branding h1 {
         font-size: 1.3rem;
     }
+    .cart-icon {
+        display: none;
+    }
 
 
     /********* Cart Section ***************/
