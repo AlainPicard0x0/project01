@@ -741,7 +741,7 @@ footer p{
     /********* Nav Section ****************/
 
     .dropdown-button {
-        padding: 14px 14px 0 14px;
+        padding: 5px 5px 0 5px;
     }
     #branding h1 {
         font-size: 1.3rem;
@@ -749,6 +749,7 @@ footer p{
     .cart-icon {
         display: none;
     }
+    
 
 
     /********* Cart Section ***************/
