@@ -740,6 +740,9 @@ footer p{
 @media(max-width: 992px) {
     /********* Nav Section ****************/
 
+    .dropdown {
+        margin: 0 10px;
+    }
     .dropdown-button {
         padding: 5px 5px 0 5px;
     }
