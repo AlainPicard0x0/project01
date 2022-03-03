@@ -759,6 +759,10 @@ footer p{
    .container {
        width: 98%;
    }
+   .flex-container-footer {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    }
     .checkout {
         margin: 10px 0;
     }
