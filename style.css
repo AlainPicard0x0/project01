@@ -763,6 +763,9 @@ footer p{
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
+    #newsletter {
+        grid-area: 1 / 1 / 2 / 4;
+    }
     .checkout {
         margin: 10px 0;
     }
