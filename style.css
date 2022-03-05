@@ -767,6 +767,7 @@ footer p{
         grid-area: 1 / 1 / 2 / 4;
     }
     #fname,
+    #lname,
     #email,
     #newsletter-button {
         width: 50vw;
