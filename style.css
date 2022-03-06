@@ -752,6 +752,9 @@ footer p{
     .cart-icon {
         display: none;
     }
+    #newsletter {
+        margin: 50px 10px;
+    }
     .models li {
         text-align: center;
     }
