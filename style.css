@@ -752,7 +752,9 @@ footer p{
     .cart-icon {
         display: none;
     }
-    
+    .models li {
+        text-align: center;
+    }
 
 
     /********* Cart Section ***************/
