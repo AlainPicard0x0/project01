@@ -787,7 +787,10 @@ footer p{
         margin: 10px 0;
         width: 30vw;
     }
-
+    .checkout-container-image {
+        width: 70px;
+        height: 70px;
+    }
     .cart-div {
         width: 60vw;
     }
