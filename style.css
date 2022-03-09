@@ -755,6 +755,7 @@ footer p{
     #showcase {
         background: url("./assets/iphone-6.jpg") no-repeat;
         background-position: center;
+        height: 60vh;
     }
     .cart-icon {
         display: none;
