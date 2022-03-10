@@ -760,6 +760,10 @@ footer p{
     #showcase-main {
         padding: 25px;
     }
+    #case-display img {
+        width: 182px;
+        height: 182px;
+    }
     .cart-icon {
         display: none;
     }
