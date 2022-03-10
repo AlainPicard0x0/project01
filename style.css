@@ -757,6 +757,9 @@ footer p{
         background-position: center;
         height: 60vh;
     }
+    #showcase-main {
+        padding: 25px;
+    }
     .cart-icon {
         display: none;
     }
