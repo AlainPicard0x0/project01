@@ -737,6 +737,10 @@ footer p{
     #cart-mid-page h3 {
         font-size: 1.3rem;
     }
+
+    #cart-mid-page p {
+        font-size: 0.9rem;
+    }
 }
 
 /**************************/
