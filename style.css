@@ -733,6 +733,10 @@ footer p{
     p.title {
         grid-area: 1 / 2 / 2 / 8;
     }
+
+    #cart-mid-page h3 {
+        font-size: 1.3rem;
+    }
 }
 
 /**************************/
