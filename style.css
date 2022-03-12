@@ -508,7 +508,6 @@ footer p{
 @media(max-width: 1680px) {
     body{
         font-size: 0.7rem;
-        background-color: aqua;
     }
 
     .container{
