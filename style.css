@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     line-height: 1.5;
     background-color: #fff;
 }
@@ -507,7 +507,8 @@ footer p{
 
 @media(max-width: 1680px) {
     body{
-        font-size: 0.7rem;
+        /*font size is set to 1.0 at top of style sheet. This isn't doing anything here*/
+        font-size: 1.0rem;
     }
 
     .container{
