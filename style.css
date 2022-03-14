@@ -542,7 +542,6 @@ footer p{
         min-height: 35vh;
     }
 
-
     #mid-page h3{
         margin-top: 30px;
         font-size: 1.2rem;
@@ -550,7 +549,7 @@ footer p{
 
     #mid-page p{
         margin: 10px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }  
     
     /*selection.html page*/
