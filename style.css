@@ -523,7 +523,11 @@ footer p{
     
     #branding{
         margin: 25px;
-    }     
+    }   
+    
+    .dropdown-button {
+        padding: 10px 14px;
+    }
     
     #showcase{
         height: 75vh;
